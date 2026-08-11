@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block title %}Our Team — CareerIgnite{% endblock %}
+
+{% block content %}
+<section class="hero" style="min-height:50vh;">
+    <div class="hero-content" style="grid-template-columns:1fr;text-align:center;">
+        <div>
+            <h1>Meet The <span>Team</span></h1>
+            <p style="max-width:700px;margin:0 auto;">A passionate group of engineers, designers, and career experts working together to guide your journey.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="team-grid">
+        <div class="team-card">
+            <div class="team-photo">SA</div>
+            <h3>Shorouk Amr</h3>
+            <p class="role">AI Developer</p>
+            <p class="bio">Builds the intelligence behind CareerIgnite — turning user data into accurate, personalized career matches.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">SA</div>
+            <h3>Shahd Ashraf</h3>
+            <p class="role">AI Developer</p>
+            <p class="bio">Crafts the recommendation models that power our smart, data-driven career suggestions.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">ME</div>
+            <h3>Mostafa Eid</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Designs every screen you love. Believes great design is invisible — it just makes things feel right.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">AM</div>
+            <h3>Abdo Mostafa</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Architect of the experience behind the scenes — making sure every click is fast, smooth, and reliable.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">MN</div>
+            <h3>Mohamed Nasr</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Brings interfaces to life with clean code and a sharp eye for detail and user flow.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">MA</div>
+            <h3>Manar Ahmed</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Turns ideas into responsive, modern pages that feel intuitive on every device.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">MA</div>
+            <h3>Manar Arafat</h3>
+            <p class="role">Frontend Developer</p>
+            <p class="bio">Crafts polished UI with a focus on accessibility, consistency, and delightful interactions.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:var(--navy-mid);text-align:center;">
+    <h2 class="section-title">Want to Join <span>Us</span>?</h2>
+    <p class="section-subtitle">We're always looking for passionate people to help shape the future of career discovery.</p>
+    <a href="{% url 'contact_page' %}" class="btn btn-primary">Get in Touch</a>
+</section>
+{% endblock %}

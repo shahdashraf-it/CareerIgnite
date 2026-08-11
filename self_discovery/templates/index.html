@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}CareerIgnite — Discover Your Perfect Career Path{% endblock %}
+
+{% block content %}
+<!-- ===== Hero ===== -->
+<section class="hero">
+    <div class="hero-content">
+        
+        <div>
+            <h1>Discover Your <span>Perfect</span> Career Path</h1>
+            <p>CareerIgnite uses advanced AI to analyze your skills, education, and interests — then guides you to the career track where you'll truly thrive, with a step-by-step personalized roadmap.</p>
+            <div class="hero-buttons">
+                <a href="{% url 'job_recommendation' %}" class="btn btn-primary">Start Your Journey →</a>
+                <a href="{% url 'about_page' %}" class="btn btn-outline">Learn More</a>
+            </div>
+        </div>
+        
+        <!-- الصورة بشكل دائري (زي الدائرة الخضراء) -->
+        <div class="sphere-illustration">
+            <img src="{% static 'picccc.png' %}" alt="Career Path Illustration" class="sphere-core-image">
+        </div>
+        
+    </div>
+   
+</section>
+
+{% endblock %}

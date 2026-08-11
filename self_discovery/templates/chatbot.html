@@ -1,0 +1,643 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Career Assistant — CareerIgnite{% endblock %}
+
+{% block content %}
+
+<section class="hero" style="min-height:40vh;">
+
+    <div class="hero-content" style="grid-template-columns:1fr;text-align:center;">
+
+        <div>
+
+            <span class="roadmap-title-tag">
+                🤖 AI Career Assistant
+            </span>
+
+            <h1>
+                Ask About Any <span>Career Path</span>
+            </h1>
+
+            <p style="max-width:700px;margin:10px auto 0;">
+
+                Get instant explanations about career tracks,
+                skills, difficulty levels, and learning paths.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="chatbot-box">
+
+        <div class="chatbot-header">
+
+            <i class="fas fa-robot"></i>
+
+            Career Assistant
+
+        </div>
+
+        <div id="languageSelection" class="language-selection">
+
+            <p class="lang-selection-text">
+
+                🌐 Please choose your language / من فضلك اختر لغتك
+
+            </p>
+
+            <div class="lang-buttons-container">
+
+                <button onclick="selectLanguage('en')" class="btn btn-primary lang-btn">
+                    🇬🇧 English
+                </button>
+
+                <button onclick="selectLanguage('ar')" class="btn btn-outline lang-btn">
+                    🇸🇦 العربية
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="chatInterface" style="display:none;">
+
+            <div id="chatMessages" class="chat-messages">
+
+
+            </div>
+
+            <div class="chat-input-area">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Ask about AI, Cybersecurity, Frontend..."
+                    onkeypress="handleEnter(event)"
+                    disabled
+                >
+
+                <button onclick="sendMessage()" id="sendButton" disabled>
+
+                    Send
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+let chatbotData = {};
+let selectedLanguage = null;
+
+async function loadChatbotData() {
+
+    try {
+
+        const response = await fetch("/static/chatbot_data.json");
+
+        if (!response.ok) {
+
+            throw new Error("Failed to load chatbot data");
+        }
+
+        chatbotData = await response.json();
+
+        console.log("Chatbot loaded successfully");
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+}
+
+loadChatbotData();
+
+function selectLanguage(lang) {
+
+    selectedLanguage = lang;
+
+    document.getElementById('languageSelection').style.display = 'none';
+
+    const chatInterface = document.getElementById('chatInterface');
+    chatInterface.style.display = 'block';
+
+    document.getElementById('userInput').disabled = false;
+    document.getElementById('sendButton').disabled = false;
+
+    const input = document.getElementById('userInput');
+
+    if (lang === 'ar') {
+
+        input.placeholder = 'اسأل عن الذكاء الاصطناعي، الأمن السيبراني، فرونت اند...';
+
+        addBotMessage(`
+            👋 أهلاً بيك! أنا مساعد CareerIgnite الذكي 🤖
+
+            <br><br>
+
+            ممكن تسألني عن:
+
+                    <br><br>
+
+                    • الذكاء الاصطناعي (AI)
+                    <br>
+                    • الأمن السيبراني (Cybersecurity)
+                    <br>
+                    • تطوير الواجهات الأمامية (Frontend)
+                    <br>
+                    • تطوير الواجهات الخلفية (Backend)
+                    <br>
+                    • تحليل البيانات (Data Analysis)
+                    <br>
+                    • الحوسبة السحابية (Cloud Computing)
+                    <br>
+                    • ديف أوبس (DevOps)
+
+                    <br><br>
+
+        
+        `);
+
+        document.getElementById('sendButton').textContent = 'إرسال';
+
+    } else {
+
+        input.placeholder = 'Ask about AI, Cybersecurity, Frontend...';
+
+        addBotMessage(`
+            👋 Hello! I'm your CareerIgnite AI Assistant 🤖
+
+            <br><br>
+
+            You can ask me about:
+
+                    <br><br>
+
+                    • AI (Artificial Intelligence)
+                    <br>
+                    • Cybersecurity
+                    <br>
+                    • Frontend Development
+                    <br>
+                    • Backend Development
+                    <br>
+                    • Data Analysis
+                    <br>
+                    • Cloud Computing
+                    <br>
+                    • DevOps
+
+                    <br><br>
+
+                    Example:
+                    <br><br>
+
+                    • What is AI?
+                    <br>
+
+                    • Explain Frontend Development
+                    <br>
+
+                    • What does a Data Analyst do?
+        `);
+
+        document.getElementById('sendButton').textContent = 'Send';
+    }
+
+    input.focus();
+}
+
+function normalizeText(text) {
+
+    return text
+        .toLowerCase()
+        .trim()
+        .replace(/[^\w\s\u0600-\u06FF]/g, "")
+        .replace(/\s+/g, " ");
+}
+
+function isArabic(text) {
+
+    return /[\u0600-\u06FF]/.test(text);
+}
+
+function getGreetingResponse(message) {
+
+    const normalized = normalizeText(message);
+
+    const arabicGreetings = {
+        "السلام عليكم": " وعليكم السلام ورحمة الله وبركاته",
+        "السلام": " وعليكم السلام ورحمة الله وبركاته",
+        "سلام": " وعليكم السلام ورحمة الله وبركاته",
+        "سلام عليكم": " وعليكم السلام ورحمة الله وبركاته"
+    };
+
+    const englishGreetings = {
+        "hello": "👋 Hello! How can I help you today?",
+        "hi": "👋 Hi there! How can I help you?",
+        "hey": "👋 Hey! How can I help you?"
+    };
+
+    if (selectedLanguage === 'ar') {
+        if (arabicGreetings[normalized]) {
+            return arabicGreetings[normalized];
+        }
+        for (const key in arabicGreetings) {
+            if (normalized.includes(key) || key.includes(normalized)) {
+                return arabicGreetings[key];
+            }
+        }
+    } else if (selectedLanguage === 'en') {
+        if (englishGreetings[normalized]) {
+            return englishGreetings[normalized];
+        }
+        for (const key in englishGreetings) {
+            if (normalized.includes(key) || key.includes(normalized)) {
+                return englishGreetings[key];
+            }
+        }
+    }
+
+    return null;
+}
+
+function getCasualResponse(message) {
+
+    const normalized = normalizeText(message);
+
+    const casualArabic = {
+
+        "اهلا": "👋 أهلاً بيك! أنا مساعد CareerIgnite الذكي 🤖",
+        "اهلا بيك": "👋 أهلاً بيك! أنا مساعد CareerIgnite الذكي 🤖",
+        "مرحبا": "👋 مرحباً! أنا مساعد CareerIgnite الذكي 🤖",
+        "هاي": "👋 هاي! أنا مساعد CareerIgnite الذكي 🤖",
+        "هلو": "👋 هلو! أنا مساعد CareerIgnite الذكي 🤖",
+
+        "ازيك": "🤖 أهلاً بيك! إزيك عامل إيه؟ 😄<br><br>أنا موجود علشان أساعدك في أي تخصص تقني.",
+        "عامل ايه": "🤖 الحمد لله تمام 😄<br><br>أنا موجود علشان أساعدك في أي تخصص أو Career Track.",
+        "اخبارك": "🤖 تمام جدًا 😄<br><br>قولّي حابب تتعلم أو تفهم أي مجال؟",
+        "كيف حالك": "🤖 بخير الحمد لله 💙<br><br>اسألني عن أي تخصص تقني.",
+        "ايه الاخبار": "🤖 تمام جدًا 😄<br><br>قولّي حابب تتعلم أو تفهم أي مجال؟",
+        "انت كويس": "🤖 الحمد لله تمام 😄<br><br>أنا موجود علشان أساعدك.",
+
+        "صباح الخير": "☀️ صباح النور! جاهز تبدأ رحلة التعلم؟",
+        "مساء الخير": "🌙 مساء الفل! اسألني عن أي مجال تحبه.",
+        "صباح النور": "☀️ صباح النور! جاهز تبدأ رحلة التعلم؟",
+        "مساء الفل": "🌙 مساء الفل! اسألني عن أي مجال تحبه.",
+
+        "شكرا": "💙 العفو! سعيد إني قدرت أساعدك.",
+        "شكرا لك": "💙 العفو! سعيد إني قدرت أساعدك.",
+        "شكراً": "💙 العفو! سعيد إني قدرت أساعدك.",
+        "شكراً لك": "💙 العفو! سعيد إني قدرت أساعدك.",
+        "تسلم": "🤖 حبيبي 🌟",
+        "تسلمي": "🤖 حبيبتي 🌟",
+
+        "مين انت": "🤖 أنا CareerIgnite AI Assistant، مساعد ذكي بيساعدك تفهم مجالات التكنولوجيا والكارير.",
+        "من انت": "🤖 أنا CareerIgnite AI Assistant، مساعد ذكي بيساعدك تفهم مجالات التكنولوجيا والكارير.",
+        "ايه اسمك": "🤖 اسمي CareerIgnite AI Assistant! أنا هنا عشان أساعدك في رحلتك المهنية 🚀",
+        "اسمك ايه": "🤖 اسمي CareerIgnite AI Assistant! أنا هنا عشان أساعدك في رحلتك المهنية 🚀",
+
+        "ممكن تساعدني": "🚀 أكيد طبعًا! اسألني عن أي Track أو وظيفة أو مهارة.",
+        "ساعدني": "🚀 أكيد طبعًا! اسألني عن أي حاجة ومستعد أساعدك.",
+        "عايز مساعدة": "🚀 أكيد طبعًا! اسألني عن أي حاجة ومستعد أساعدك.",
+
+        "باي": "👋 مع السلامة 💙",
+        "مع السلامه": "👋 مع السلامة ومستنيك ترجع تكمل رحلتك 🚀",
+        "مع السلامة": "👋 مع السلامة ومستنيك ترجع تكمل رحلتك 🚀",
+        "سلام": " سلام عليكم 👋",
+        "وداعا": "👋 مع السلامة ومستنيك ترجع تكمل رحلتك 🚀",
+
+        "تمام": "🤖 ممتاز! أنا هنا لو محتاج أي حاجة 😊",
+        "ممتاز": "🤖 ممتاز! أنا هنا لو محتاج أي حاجة 😊",
+        "كويس": "🤖 كويس! أنا هنا لو محتاج أي حاجة 😊"
+    };
+
+    const casualEnglish = {
+
+        "hello": "👋 Hello! How can I help you today?",
+        "hi": "👋 Hi there! How can I help you?",
+        "hey": "👋 Hey! How can I help you?",
+
+        "how are you": "🤖 I'm doing great 😄<br><br>Ready to help you explore tech careers!",
+        "whats up": "🤖 I'm doing great 😄<br><br>Ready to help you explore tech careers!",
+        "what's up": "🤖 I'm doing great 😄<br><br>Ready to help you explore tech careers!",
+
+        "good morning": "☀️ Good morning! Ready to learn something new?",
+        "good evening": "🌙 Good evening! What career would you like to explore?",
+
+        "thanks": "💙 You're welcome! Glad I could help.",
+        "thank you": "💙 Anytime! Keep learning 🚀",
+
+        "who are you": "🤖 I'm CareerIgnite AI Assistant. I help users understand tech careers and learning paths.",
+        "what is your name": "🤖 My name is CareerIgnite AI Assistant! I'm here to help you with your career journey 🚀",
+
+        "can you help me": "🚀 Of course! Ask me about any technology or career path.",
+        "help me": "🚀 Of course! Ask me about anything and I'll help you.",
+
+        "bye": "👋 Goodbye! Have an awesome day 🚀",
+        "goodbye": "👋 Goodbye! Have an awesome day 🚀",
+
+        "great": "🤖 Great! I'm here if you need anything 😊",
+        "good": "🤖 Good! I'm here if you need anything 😊"
+    };
+
+    if (selectedLanguage === 'ar') {
+
+        if (casualArabic[normalized]) {
+            return casualArabic[normalized];
+        }
+
+        for (const key in casualArabic) {
+            if (normalized.includes(key)) {
+                return casualArabic[key];
+            }
+        }
+
+    } else if (selectedLanguage === 'en') {
+
+        if (casualEnglish[normalized]) {
+            return casualEnglish[normalized];
+        }
+
+        for (const key in casualEnglish) {
+            if (normalized.includes(key)) {
+                return casualEnglish[key];
+            }
+        }
+    }
+
+    return null;
+}
+
+function findBestMatch(message) {
+
+    const normalizedMessage = normalizeText(message);
+
+    for (const key in chatbotData) {
+
+        const track = chatbotData[key];
+
+        for (const keyword of track.keywords) {
+
+            const normalizedKeyword = normalizeText(keyword);
+
+            if (normalizedMessage.includes(normalizedKeyword)) {
+                return {
+                    matched: keyword,
+                    data: track
+                };
+            }
+
+            const words = normalizedMessage.split(" ");
+            if (words.includes(normalizedKeyword)) {
+                return {
+                    matched: keyword,
+                    data: track
+                };
+            }
+        }
+    }
+
+    return null;
+}
+
+function addUserMessage(message) {
+
+    const chatMessages = document.getElementById("chatMessages");
+
+    chatMessages.innerHTML += `
+        <div class="user-message">
+            ${message}
+        </div>
+    `;
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function addBotMessage(message) {
+
+    const chatMessages = document.getElementById("chatMessages");
+
+    chatMessages.innerHTML += `
+        <div class="bot-message">
+            ${message}
+        </div>
+    `;
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+}
+
+function botTyping(callback) {
+
+    const chatMessages = document.getElementById("chatMessages");
+
+    const typing = document.createElement("div");
+
+    typing.className = "bot-message";
+
+    typing.id = "typingMessage";
+
+    const typingText = selectedLanguage === 'ar' ? '🤖 جاري الكتابة...' : '🤖 Typing...';
+
+    typing.innerHTML = typingText;
+
+    chatMessages.appendChild(typing);
+
+    chatMessages.scrollTop = chatMessages.scrollHeight;
+
+    setTimeout(() => {
+
+        typing.remove();
+
+        callback();
+
+    }, 700);
+}
+
+function sendMessage() {
+
+    if (selectedLanguage === null) return;
+
+    const input = document.getElementById("userInput");
+
+    const message = input.value.trim();
+
+    if (message === "") return;
+
+    addUserMessage(message);
+
+    input.value = "";
+
+    botTyping(() => {
+
+        const greeting = getGreetingResponse(message);
+
+        if (greeting) {
+
+            addBotMessage(greeting);
+
+            return;
+        }
+
+        const casual = getCasualResponse(message);
+
+        if (casual) {
+
+            addBotMessage(casual);
+
+            return;
+        }
+
+        const result = findBestMatch(message);
+
+        if (result) {
+
+            const isArabicLang = (selectedLanguage === 'ar');
+
+            const title = isArabicLang
+                ? (result.data.title_ar || result.data.title)
+                : result.data.title;
+
+            const response = isArabicLang
+                ? (result.data.response_ar || result.data.response)
+                : result.data.response;
+
+            if (isArabicLang) {
+
+                addBotMessage(`
+                    👀 تقصد مجال:
+                    <br><br>
+
+                    <strong>${title}</strong>
+
+                    <br><br>
+
+                    ${response}
+                `);
+
+            } else {
+
+                addBotMessage(`
+                    👀 You mean:
+                    <br><br>
+
+                    <strong>${title}</strong>
+
+                    <br><br>
+
+                    ${response}
+                `);
+            }
+
+        } else {
+
+            if (selectedLanguage === 'ar') {
+
+                addBotMessage(`
+
+                    🤖 مقدرتش أفهم سؤالك بشكل كامل.
+
+                    <br><br>
+
+                    ممكن تسألني عن:
+
+                    <br><br>
+
+                    • الذكاء الاصطناعي (AI)
+                    <br>
+                    • الأمن السيبراني (Cybersecurity)
+                    <br>
+                    • تطوير الواجهات الأمامية (Frontend)
+                    <br>
+                    • تطوير الواجهات الخلفية (Backend)
+                    <br>
+                    • تحليل البيانات (Data Analysis)
+                    <br>
+                    • الحوسبة السحابية (Cloud Computing)
+                    <br>
+                    • ديف أوبس (DevOps)
+
+                    <br><br>
+
+                    مثال:
+                    <br><br>
+
+                    • يعني ايه AI؟
+                    <br>
+
+                    • اشرح Frontend
+                    <br>
+
+                    • ايه الفرق بين Frontend و Backend؟
+                `);
+
+            } else {
+
+                addBotMessage(`
+
+                    🤖 Sorry, I couldn't fully understand your question.
+
+                    <br><br>
+
+                    You can ask me about:
+
+                    <br><br>
+
+                    • AI (Artificial Intelligence)
+                    <br>
+                    • Cybersecurity
+                    <br>
+                    • Frontend Development
+                    <br>
+                    • Backend Development
+                    <br>
+                    • Data Analysis
+                    <br>
+                    • Cloud Computing
+                    <br>
+                    • DevOps
+
+                    <br><br>
+
+                    Example:
+                    <br><br>
+
+                    • What is AI?
+                    <br>
+
+                    • Explain Frontend Development
+                    <br>
+
+                    • What does a Data Analyst do?
+                `);
+            }
+        }
+
+    });
+}
+
+function handleEnter(event) {
+
+    if (event.key === "Enter") {
+
+        sendMessage();
+    }
+}
+
+</script>
+
+{% endblock %}

@@ -1,0 +1,1515 @@
+{
+  "data_scientist": {
+    "title": "Data Scientist",
+    "description": "Analyzes data to extract insights, build predictive models, and support decision making",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$120k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Build a strong Kaggle profile with real-world projects",
+      "Learn to communicate insights visually using Tableau/Power BI",
+      "Practice SQL alongside Python for data extraction",
+      "Stay updated with the latest ML research papers"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming Fundamentals", "topics": ["Python Basics", "Variables & Data Types", "Conditions & Loops", "Functions"] },
+      { "step_id": 2, "step_title": "Mathematics & Statistics", "topics": ["Linear Algebra Basics", "Probability", "Descriptive Statistics", "Inferential Statistics"] },
+      { "step_id": 3, "step_title": "Data Analysis & Cleaning", "topics": ["NumPy", "Pandas", "Data Cleaning", "Handling Missing Data"] },
+      { "step_id": 4, "step_title": "Exploratory Data Analysis (EDA)", "topics": ["Data Exploration", "Feature Understanding", "Outliers Detection"] },
+      { "step_id": 5, "step_title": "Data Visualization", "topics": ["Matplotlib", "Seaborn", "Data Storytelling"] },
+      { "step_id": 6, "step_title": "Machine Learning Basics", "topics": ["Supervised Learning", "Unsupervised Learning", "Model Evaluation", "Scikit-learn"] },
+      { "step_id": 7, "step_title": "Projects & Practice", "topics": ["Kaggle Competitions", "Real-world Datasets", "Mini End-to-End Projects"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "IBM Data Science Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Machine Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Intermediate" },
+        { "title": "Deep Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Google Data Analytics (Coursera Audit)",
+        "Kaggle Learn Courses",
+        "StatQuest YouTube Channel",
+        "Fast.ai Practical Deep Learning"
+      ],
+      "projects": [
+        "Build a customer churn prediction model using Python and scikit-learn",
+        "Analyze a sales dataset and create an interactive dashboard with visual insights",
+        "Perform EDA on a public health dataset and present key findings",
+        "Build a recommendation system using collaborative filtering"
+      ],
+      "certifications": [
+        "IBM Data Science Professional Certificate",
+        "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+        "Google Advanced Data Analytics Certificate",
+        "TensorFlow Developer Certificate"
+      ],
+      "tools": ["Jupyter Notebook", "Power BI", "Tableau", "GitHub"]
+    }
+  },
+
+  "software_engineer": {
+    "title": "Software Engineer",
+    "description": "Designs, develops, and maintains software applications",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$120k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master Data Structures & Algorithms for technical interviews",
+      "Contribute to open-source projects to build your portfolio",
+      "Learn to write clean, documented, and testable code",
+      "Stay updated with modern software development trends"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming Fundamentals", "topics": ["Python/Java Basics", "OOP Concepts", "Data Structures", "Algorithms"] },
+      { "step_id": 2, "step_title": "Version Control", "topics": ["Git Basics", "Branching", "Merging", "GitHub"] },
+      { "step_id": 3, "step_title": "Databases", "topics": ["SQL", "NoSQL Basics", "Database Design"] },
+      { "step_id": 4, "step_title": "Software Development Lifecycle", "topics": ["Requirements Analysis", "Testing", "Debugging", "Documentation"] },
+      { "step_id": 5, "step_title": "Frameworks & Tools", "topics": ["Node.js / Django / Spring Boot", "React Basics", "Build Tools"] },
+      { "step_id": 6, "step_title": "Projects & Practice", "topics": ["Mini Projects", "Open Source Contribution", "Portfolio Building"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "CS50's Introduction to Computer Science", "platform": "Harvard / edX", "level": "Beginner" },
+        { "title": "Data Structures and Algorithms Specialization", "platform": "Coursera (UC San Diego)", "level": "Intermediate" },
+        { "title": "Software Design and Architecture Specialization", "platform": "Coursera (U Alberta)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "freeCodeCamp Full Stack Curriculum",
+        "The Odin Project",
+        "LeetCode (for practice)",
+        "MDN Web Docs"
+      ],
+      "projects": [
+        "Build a task management web application with authentication and database integration",
+        "Develop a simple inventory management system using OOP and SQL",
+        "Create a RESTful API for a blog platform with user authentication",
+        "Build a real-time chat application using WebSockets"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate",
+        "AWS Certified Developer – Associate",
+        "Oracle Certified Professional, Java SE",
+        "Microsoft Azure Developer Associate"
+      ],
+      "tools": ["GitHub", "Postman", "IntelliJ IDEA", "Docker"]
+    }
+  },
+
+  "ux_designer": {
+    "title": "UX Designer",
+    "description": "Designs user experiences and interfaces that are user-friendly and effective",
+    "estimated_time": "5–8 Months",
+    "avg_salary": "$95k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Always start with user research before designing",
+      "Keep a detailed case study for your portfolio",
+      "Learn to give and receive constructive feedback",
+      "Stay updated with the latest UX/UI trends and tools"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Design Basics", "topics": ["Design Principles", "Color Theory", "Typography"] },
+      { "step_id": 2, "step_title": "Wireframing & Prototyping", "topics": ["Sketching", "Figma Basics", "Adobe XD"] },
+      { "step_id": 3, "step_title": "User Research", "topics": ["Interviews", "Surveys", "Personas"] },
+      { "step_id": 4, "step_title": "Usability Testing", "topics": ["A/B Testing", "User Feedback", "Iteration"] },
+      { "step_id": 5, "step_title": "Projects & Portfolio", "topics": ["Design Case Studies", "Portfolio Building"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google UX Design Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Interaction Design Specialization", "platform": "Coursera (UCSD)", "level": "Intermediate" },
+        { "title": "Advanced UX Research Methods", "platform": "Coursera (U Michigan)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Figma's YouTube Channel",
+        "UX Collective Blog",
+        "NN/g Articles",
+        "Maze (free templates)"
+      ],
+      "projects": [
+        "Design a mobile banking app prototype with user flows and wireframes",
+        "Create a full UX case study for redesigning an e-commerce checkout experience",
+        "Conduct user research and design a dashboard for a fitness tracking app",
+        "Redesign a local Egyptian website or app with a full UX audit"
+      ],
+      "certifications": [
+        "Google UX Design Professional Certificate",
+        "NN/g UX Certification",
+        "Interaction Design Foundation (IDF) Membership",
+        "Certified Usability Analyst (CUA)"
+      ],
+      "tools": ["Figma", "Adobe XD", "Miro", "Maze"]
+    }
+  },
+
+  "ai_researcher": {
+    "title": "AI Researcher",
+    "description": "Researches and develops AI algorithms and models to solve complex problems",
+    "estimated_time": "12–18 Months",
+    "avg_salary": "$145k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Read research papers daily (e.g., arXiv)",
+      "Reproduce papers to understand them deeply",
+      "Network at academic conferences",
+      "Learn to write and publish research papers"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & Math", "topics": ["Python", "Linear Algebra", "Calculus", "Probability"] },
+      { "step_id": 2, "step_title": "Machine Learning", "topics": ["Supervised Learning", "Unsupervised Learning", "Model Evaluation"] },
+      { "step_id": 3, "step_title": "Deep Learning", "topics": ["Neural Networks", "CNNs", "RNNs", "Frameworks (TensorFlow, PyTorch)"] },
+      { "step_id": 4, "step_title": "Research Methodology", "topics": ["Paper Reading", "Experiment Design", "Reproducibility"] },
+      { "step_id": 5, "step_title": "Projects & Publications", "topics": ["Research Projects", "Publishing Papers", "Conferences"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "AI For Everyone", "platform": "Coursera (DeepLearning.AI)", "level": "Beginner" },
+        { "title": "Deep Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Intermediate" },
+        { "title": "CS224N: Natural Language Processing with Deep Learning", "platform": "Stanford", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "fast.ai Practical Deep Learning",
+        "Two Minute Papers (YouTube)",
+        "arXiv.org",
+        "Papers With Code"
+      ],
+      "projects": [
+        "Reproduce a research paper experiment using PyTorch and compare results",
+        "Build and evaluate an image classification or NLP model on a benchmark dataset",
+        "Implement a custom attention mechanism or transformer block from scratch",
+        "Publish a small research paper in an undergraduate journal or conference"
+      ],
+      "certifications": [
+        "DeepLearning.AI TensorFlow Developer Certificate",
+        "NVIDIA Deep Learning Institute Certificates",
+        "Microsoft Certified: Azure Data Scientist Associate",
+        "AWS Certified Machine Learning – Specialty"
+      ],
+      "tools": ["PyTorch", "Weights & Biases", "Hugging Face", "Google Colab"]
+    }
+  },
+
+  "project_manager": {
+    "title": "Project Manager",
+    "description": "Plans, executes, and closes projects while managing resources and team",
+    "estimated_time": "4–6 Months",
+    "avg_salary": "$95k",
+    "learning_hours_per_day": "2–3 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Get hands-on with Jira and Trello early",
+      "Work on your communication and negotiation skills",
+      "Learn both Agile and Waterfall methodologies",
+      "Understand the basics of budgeting and resource allocation"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Project Management Fundamentals", "topics": ["Project Lifecycle", "Planning Techniques", "Risk Management"] },
+      { "step_id": 2, "step_title": "Tools & Software", "topics": ["Jira", "Trello", "MS Project"] },
+      { "step_id": 3, "step_title": "Agile & Scrum", "topics": ["Scrum Basics", "Kanban", "Sprint Planning"] },
+      { "step_id": 4, "step_title": "Leadership & Communication", "topics": ["Team Management", "Conflict Resolution", "Stakeholder Communication"] },
+      { "step_id": 5, "step_title": "Projects & Practice", "topics": ["Case Studies", "Simulated Projects", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google Project Management Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Agile with Atlassian Jira", "platform": "Coursera", "level": "Intermediate" },
+        { "title": "Project Management Principles and Practices", "platform": "Coursera (UCI)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Atlassian Agile Coach",
+        "Scrum Guide (free PDF)",
+        "PMI Articles",
+        "Project Management Templates (PMI)"
+      ],
+      "projects": [
+        "Create a project plan with milestones, risk register, and stakeholder map for a software project",
+        "Manage a simulated Agile sprint board for a product development case study",
+        "Develop a communication plan and RACI matrix for a cross-functional team",
+        "Create a budget and resource allocation plan for a new product launch"
+      ],
+      "certifications": [
+        "CAPM (Certified Associate in Project Management)",
+        "Professional Scrum Master I (PSM I)",
+        "Google Project Management Certificate",
+        "PMP (Project Management Professional) Prep"
+      ],
+      "tools": ["Jira", "Microsoft Project", "Trello", "Asana"]
+    }
+  },
+
+  "embedded_systems_engineer": {
+    "title": "Embedded Systems Engineer",
+    "description": "Designs and develops software for embedded systems and hardware devices",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$110k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Buy an Arduino/ESP32 kit for hands-on practice",
+      "Understand memory management in C/C++",
+      "Learn to read and interpret hardware datasheets",
+      "Practice debugging hardware-software integration issues"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming Fundamentals", "topics": ["C/C++ Basics", "Microcontrollers Basics"] },
+      { "step_id": 2, "step_title": "Hardware & Electronics", "topics": ["Digital Electronics", "Sensors & Actuators", "Circuit Design"] },
+      { "step_id": 3, "step_title": "RTOS & Firmware", "topics": ["Real-time Operating Systems", "Firmware Development"] },
+      { "step_id": 4, "step_title": "Communication Protocols", "topics": ["UART", "SPI", "I2C"] },
+      { "step_id": 5, "step_title": "Projects & Practice", "topics": ["Embedded Projects", "IoT Devices", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "C Programming for Embedded Applications", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Embedded Systems Essentials with Arm", "platform": "Coursera", "level": "Intermediate" },
+        { "title": "Advanced RTOS and Firmware Development", "platform": "Coursera (Real-Time Specialization)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Embedded Systems MIT OCW",
+        "Arduino Project Hub",
+        "edX Embedded Systems",
+        "STM32CubeMX Documentation"
+      ],
+      "projects": [
+        "Build a temperature monitoring system using a microcontroller and sensors",
+        "Develop a smart home IoT prototype with sensor data and serial communication",
+        "Create a traffic light control system using state machines on an Arduino",
+        "Design an automated plant watering system with moisture sensors"
+      ],
+      "certifications": [
+        "Arm Accredited Engineer (AAE)",
+        "Embedded Systems Programming on Arm Cortex-M",
+        "Certified LabVIEW Developer (CLD)",
+        "STM32 Certification"
+      ],
+      "tools": ["Arduino IDE", "Proteus", "STM32CubeMX", "Keil uVision"]
+    }
+  },
+
+  "data_analyst": {
+    "title": "Data Analyst",
+    "description": "Analyzes and interprets data to support business decision making",
+    "estimated_time": "6–9 Months",
+    "avg_salary": "$80k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master Excel and SQL perfectly",
+      "Build dashboards that tell a clear story",
+      "Practice on real Egyptian market datasets",
+      "Learn to clean and preprocess messy data"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Data Fundamentals", "topics": ["Excel", "SQL Basics", "Data Cleaning"] },
+      { "step_id": 2, "step_title": "Data Analysis", "topics": ["Pandas", "NumPy", "Data Aggregation"] },
+      { "step_id": 3, "step_title": "Data Visualization", "topics": ["Matplotlib", "Seaborn", "Power BI/Tableau"] },
+      { "step_id": 4, "step_title": "Reporting & Insights", "topics": ["Dashboards", "Business Reports", "Storytelling with Data"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google Data Analytics Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Data Analysis with Python", "platform": "freeCodeCamp", "level": "Intermediate" },
+        { "title": "Excel Skills for Business", "platform": "Coursera (Macquarie)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Mode Analytics SQL Tutorial",
+        "Kaggle Datasets",
+        "Excel Is Fun YouTube",
+        "Google Data Studio (free dashboard tool)"
+      ],
+      "projects": [
+        "Create a sales performance dashboard using Power BI or Tableau",
+        "Clean and analyze customer feedback data to generate business insights",
+        "Analyze e-commerce transaction data to identify seasonal trends",
+        "Build an executive summary dashboard for a local Egyptian business"
+      ],
+      "certifications": [
+        "Google Data Analytics Professional Certificate",
+        "Microsoft Certified: Power BI Data Analyst Associate (PL-300)",
+        "Tableau Desktop Specialist",
+        "SQL for Data Science (UC Davis)"
+      ],
+      "tools": ["Excel", "Power BI", "Tableau", "Google Data Studio"]
+    }
+  },
+
+  "digital_marketer": {
+    "title": "Digital Marketer",
+    "description": "Plans and executes marketing campaigns across digital channels",
+    "estimated_time": "4–6 Months",
+    "avg_salary": "$60k",
+    "learning_hours_per_day": "2–3 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Get certified in Google Analytics and Google Ads",
+      "Learn copywriting and storytelling",
+      "Experiment with creating your own blog/side project",
+      "Understand the basics of SEO and SEM"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Marketing Basics", "topics": ["Marketing Principles", "Customer Segmentation"] },
+      { "step_id": 2, "step_title": "Digital Channels", "topics": ["SEO", "SEM", "Email Marketing", "Social Media"] },
+      { "step_id": 3, "step_title": "Analytics & Tools", "topics": ["Google Analytics", "Ads Management", "Conversion Tracking"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Campaign Projects", "Portfolio", "Case Studies"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google Digital Marketing & E-commerce Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Fundamentals of Digital Marketing", "platform": "Google Digital Garage", "level": "Intermediate" },
+        { "title": "Digital Marketing Specialization", "platform": "Coursera (UIUC)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Google Skillshop",
+        "HubSpot Academy Free Courses",
+        "Facebook Blueprint",
+        "Moz SEO Learning Center"
+      ],
+      "projects": [
+        "Create a full social media campaign for a fictional product launch",
+        "Run SEO analysis and content optimization for a blog or small business website",
+        "Build an email marketing funnel using Mailchimp and track conversion metrics",
+        "Create a Google Ads campaign and optimize for conversions"
+      ],
+      "certifications": [
+        "Google Analytics Certification",
+        "Meta Certified Digital Marketing Associate",
+        "HubSpot Inbound Marketing Certification",
+        "Semrush SEO Certification"
+      ],
+      "tools": ["Google Analytics", "Meta Ads Manager", "Mailchimp", "Semrush"]
+    }
+  },
+
+  "nlp_engineer": {
+    "title": "NLP Engineer",
+    "description": "Develops natural language processing systems for understanding and generating human language",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$145k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Focus on Transformers and BERT/GPT architectures",
+      "Work on Arabic NLP datasets",
+      "Follow Hugging Face tutorials",
+      "Practice with real-world text classification problems"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & Math", "topics": ["Python", "Linear Algebra", "Probability", "Statistics"] },
+      { "step_id": 2, "step_title": "NLP Basics", "topics": ["Text Preprocessing", "Tokenization", "POS Tagging"] },
+      { "step_id": 3, "step_title": "Deep Learning for NLP", "topics": ["Word Embeddings", "RNNs", "Transformers", "PyTorch/TensorFlow"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Chatbots", "Text Classification", "Language Models"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Natural Language Processing Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Intermediate" },
+        { "title": "CS224N: Natural Language Processing with Deep Learning", "platform": "Stanford", "level": "Advanced" },
+        { "title": "Hugging Face Transformer Course", "platform": "Hugging Face", "level": "Beginner" }
+      ],
+      "free_resources": [
+        "Hugging Face Course (free)",
+        "spaCy 101",
+        "Kaggle NLP competitions",
+        "Arabic NLP resources (Arabic-NLP)"
+      ],
+      "projects": [
+        "Build a sentiment analysis model for product reviews",
+        "Develop a chatbot or text classification system using transformers",
+        "Create an Arabic text summarization model using a pre-trained BERT",
+        "Build a named entity recognition (NER) system for Arabic news articles"
+      ],
+      "certifications": [
+        "DeepLearning.AI TensorFlow Developer Certificate",
+        "Hugging Face NLP Course Certificate",
+        "AWS Certified Machine Learning – Specialty",
+        "Microsoft Azure AI Engineer Associate"
+      ],
+      "tools": ["Hugging Face Transformers", "spaCy", "Weights & Biases", "Google Colab"]
+    }
+  },
+
+  "financial_analyst": {
+    "title": "Financial Analyst",
+    "description": "Analyzes financial data to guide investment and business decisions",
+    "estimated_time": "6–9 Months",
+    "avg_salary": "$85k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Master Excel financial modeling",
+      "Understand the Egyptian stock market",
+      "Learn basic accounting principles",
+      "Build financial models with scenario analysis"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Finance Fundamentals", "topics": ["Accounting Basics", "Financial Statements", "Ratio Analysis"] },
+      { "step_id": 2, "step_title": "Financial Modeling", "topics": ["Excel Modeling", "Forecasting", "Valuation Techniques"] },
+      { "step_id": 3, "step_title": "Data Analysis & Tools", "topics": ["Python for Finance", "SQL", "Visualization"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Case Studies", "Investment Analysis", "Portfolio Projects"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Introduction to Corporate Finance", "platform": "Coursera (Wharton)", "level": "Beginner" },
+        { "title": "Financial Markets", "platform": "Coursera (Yale)", "level": "Intermediate" },
+        { "title": "Financial Modeling and Valuation", "platform": "Coursera (Corporate Finance Institute)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Corporate Finance Institute (CFI) Free Resources",
+        "Investopedia",
+        "Google Finance for practice",
+        "Yahoo Finance API"
+      ],
+      "projects": [
+        "Build a discounted cash flow (DCF) valuation model for a public company",
+        "Analyze stock market data and create an investment insights dashboard",
+        "Perform a financial ratio analysis for a company in the Egyptian market",
+        "Build a financial forecasting model for a startup"
+      ],
+      "certifications": [
+        "FMVA (Financial Modeling & Valuation Analyst)",
+        "Bloomberg Market Concepts (BMC)",
+        "CFA Level 1 (Candidate)",
+        "Corporate Finance Institute (CFI) Certification"
+      ],
+      "tools": ["Microsoft Excel", "Power BI", "Python (Pandas)", "Google Finance"]
+    }
+  },
+
+  "research_scientist": {
+    "title": "Research Scientist",
+    "description": "Conducts scientific research to discover new knowledge and innovations",
+    "estimated_time": "12–18 Months",
+    "avg_salary": "$140k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Low to Medium",
+    "job_tips": [
+      "Learn to write structured research proposals",
+      "Build a strong network in academia/industry",
+      "Master a reference manager like Zotero",
+      "Practice scientific writing and paper publishing"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Foundations", "topics": ["Scientific Method", "Research Ethics", "Literature Review"] },
+      { "step_id": 2, "step_title": "Specialized Knowledge", "topics": ["Domain-Specific Skills", "Data Collection Techniques"] },
+      { "step_id": 3, "step_title": "Data Analysis & Tools", "topics": ["Statistical Analysis", "Python/R", "Visualization"] },
+      { "step_id": 4, "step_title": "Experimentation & Publication", "topics": ["Design Experiments", "Publish Papers", "Present Findings"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Understanding Research Methods", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Data Analysis for Life Sciences", "platform": "edX (Harvard)", "level": "Intermediate" },
+        { "title": "Science Communication", "platform": "Coursera (University of Washington)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Google Scholar",
+        "PubMed",
+        "Coursera Research Courses (Audit)",
+        "Open Science Framework (OSF)"
+      ],
+      "projects": [
+        "Conduct a small research study and write a structured report with findings",
+        "Reproduce an academic paper's experiment and compare your results",
+        "Write a literature review on a trending topic in your field",
+        "Present research findings at a university conference or symposium"
+      ],
+      "certifications": [
+        "CITI Program Research Ethics Certification",
+        "IBM Data Science Professional Certificate",
+        "Good Clinical Practice (GCP) Certification",
+        "Responsible Conduct of Research (RCR)"
+      ],
+      "tools": ["Zotero", "RStudio", "Microsoft Excel", "Python (Jupyter)"]
+    }
+  },
+
+  "frontend_developer": {
+    "title": "Front-end Developer",
+    "description": "Builds interactive and visually appealing user interfaces",
+    "estimated_time": "6–9 Months",
+    "avg_salary": "$105k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master pure CSS and JavaScript before frameworks",
+      "Build a strong portfolio on GitHub",
+      "Learn responsive design principles",
+      "Understand cross-browser compatibility and accessibility"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Basics", "topics": ["HTML", "CSS", "JavaScript"] },
+      { "step_id": 2, "step_title": "Advanced JS", "topics": ["ES6+", "DOM Manipulation", "Async JS"] },
+      { "step_id": 3, "step_title": "Frameworks", "topics": ["React", "Vue.js", "State Management"] },
+      { "step_id": 4, "step_title": "Tools & Build", "topics": ["Git/GitHub", "npm", "Webpack"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Responsive Web Design", "platform": "freeCodeCamp", "level": "Beginner" },
+        { "title": "React - The Complete Guide", "platform": "Udemy", "level": "Intermediate" },
+        { "title": "Advanced React & Next.js", "platform": "Frontend Masters", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "The Odin Project (Full Stack JS)",
+        "MDN Web Docs",
+        "CSS-Tricks",
+        "JavaScript.info"
+      ],
+      "projects": [
+        "Build a responsive e-commerce landing page with HTML, CSS, and JavaScript",
+        "Develop a React dashboard with routing, reusable components, and API integration",
+        "Create a weather app using a public API and display data dynamically",
+        "Build a portfolio website with a dark/light mode toggle and animations"
+      ],
+      "certifications": [
+        "Meta Front-End Developer Professional Certificate",
+        "freeCodeCamp Responsive Web Design Certification",
+        "JavaScript Algorithms and Data Structures (freeCodeCamp)",
+        "Google UX Design (optional extension)"
+      ],
+      "tools": ["VS Code", "Chrome DevTools", "Figma", "GitHub"]
+    }
+  },
+
+  "marketing_manager": {
+    "title": "Marketing Manager",
+    "description": "Leads marketing strategies and campaigns to promote products and services",
+    "estimated_time": "4–6 Months",
+    "avg_salary": "$100k",
+    "learning_hours_per_day": "2–3 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Focus on ROI and data-driven decisions",
+      "Develop strong leadership skills",
+      "Stay updated with digital marketing trends",
+      "Learn to manage marketing budgets effectively"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Marketing Fundamentals", "topics": ["Marketing Principles", "Market Research", "Branding"] },
+      { "step_id": 2, "step_title": "Digital Marketing", "topics": ["SEO", "SEM", "Email Marketing", "Social Media"] },
+      { "step_id": 3, "step_title": "Analytics & Tools", "topics": ["Google Analytics", "Campaign Tracking", "KPIs"] },
+      { "step_id": 4, "step_title": "Projects & Campaigns", "topics": ["Marketing Plan", "Case Studies", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Marketing Strategy", "platform": "Coursera (IESE)", "level": "Beginner" },
+        { "title": "Digital Marketing Specialization", "platform": "Coursera (UIUC)", "level": "Intermediate" },
+        { "title": "Strategic Brand Management", "platform": "Coursera (LBS)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "HubSpot Academy",
+        "Google Digital Garage",
+        "Kissmetrics Blog",
+        "Marketing Week (Articles)"
+      ],
+      "projects": [
+        "Develop a complete marketing strategy for launching a new tech product",
+        "Create a multi-channel campaign report with KPIs, audience targeting, and ROI analysis",
+        "Conduct a competitive analysis and brand positioning exercise for a local brand",
+        "Build a comprehensive marketing plan for an Egyptian startup"
+      ],
+      "certifications": [
+        "Google Analytics Certification",
+        "Meta Certified Digital Marketing Associate",
+        "HubSpot Inbound Marketing Certification",
+        "PCM (Professional Certified Marketer)"
+      ],
+      "tools": ["Google Analytics", "HubSpot", "SEMrush", "Hootsuite"]
+    }
+  },
+
+  "full_stack_developer": {
+    "title": "Full Stack Developer",
+    "description": "Develops both front-end and back-end of web applications",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$125k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Learn the MERN or Django stack deeply",
+      "Understand HTTP/REST APIs thoroughly",
+      "Practice deploying to cloud platforms",
+      "Learn to design scalable and maintainable systems"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Front-end Basics", "topics": ["HTML", "CSS", "JavaScript", "React"] },
+      { "step_id": 2, "step_title": "Back-end Basics", "topics": ["Node.js", "Express", "Databases"] },
+      { "step_id": 3, "step_title": "Integration & APIs", "topics": ["REST APIs", "Authentication", "Full Stack Projects"] },
+      { "step_id": 4, "step_title": "Tools & Deployment", "topics": ["Git", "Docker", "CI/CD", "Cloud Deployment"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "The Web Developer Bootcamp", "platform": "Udemy", "level": "Beginner" },
+        { "title": "Meta Full Stack Developer Certificate", "platform": "Coursera", "level": "Intermediate" },
+        { "title": "Advanced Microservices & Serverless Architecture", "platform": "Coursera (Google)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "The Odin Project (Full Stack JS)",
+        "freeCodeCamp Backend",
+        "MongoDB University",
+        "Postman API Fundamentals"
+      ],
+      "projects": [
+        "Build a full-stack job board or e-commerce application with authentication and database support",
+        "Create a MERN or Django-based dashboard with CRUD operations and API integration",
+        "Deploy a full-stack chat application using WebSockets and a cloud database",
+        "Build a full-stack blog platform with user roles, comments, and like functionality"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate",
+        "Meta Front-End Developer Professional Certificate",
+        "AWS Certified Cloud Practitioner",
+        "MongoDB Certified Developer"
+      ],
+      "tools": ["Postman", "Docker", "MongoDB Compass", "GitHub"]
+    }
+  },
+
+  "ai_specialist": {
+    "title": "AI Specialist",
+    "description": "Designs and implements AI systems to solve real-world problems",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$125k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Work on end-to-end AI pipelines",
+      "Learn MLOps basics early",
+      "Build a solid GitHub portfolio of AI demos",
+      "Understand model deployment and monitoring"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & Math", "topics": ["Python", "Linear Algebra", "Probability", "Calculus"] },
+      { "step_id": 2, "step_title": "Machine Learning", "topics": ["Supervised Learning", "Unsupervised Learning", "Scikit-learn"] },
+      { "step_id": 3, "step_title": "Deep Learning", "topics": ["Neural Networks", "TensorFlow", "PyTorch"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["AI Projects", "Kaggle Competitions", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "AI for Everyone", "platform": "Coursera (DeepLearning.AI)", "level": "Beginner" },
+        { "title": "Machine Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Intermediate" },
+        { "title": "IBM AI Engineering Professional Certificate", "platform": "Coursera", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Google Colab for practice",
+        "Kaggle Learn",
+        "DeepLearning.AI Short Courses",
+        "OpenAI Cookbook"
+      ],
+      "projects": [
+        "Build an AI-powered recommendation or classification system using real-world data",
+        "Create an image recognition or chatbot application and deploy a demo version",
+        "Develop a predictive maintenance model using sensor time-series data",
+        "Build an end-to-end AI pipeline from data collection to model deployment"
+      ],
+      "certifications": [
+        "Microsoft Certified: Azure AI Fundamentals (AI-900)",
+        "TensorFlow Developer Certificate",
+        "AWS Certified Machine Learning – Specialty",
+        "Google Cloud Professional ML Engineer"
+      ],
+      "tools": ["TensorFlow", "Google Colab", "PyTorch", "MLflow"]
+    }
+  },
+
+  "cybersecurity_analyst": {
+    "title": "Cybersecurity Analyst",
+    "description": "Protects systems and networks from cyber threats and attacks",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$115k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Set up a home lab for practice",
+      "Participate in CTF competitions",
+      "Understand both network and application security",
+      "Stay updated with the latest CVE vulnerabilities"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Security Fundamentals", "topics": ["Network Basics", "Security Principles", "Threat Models"] },
+      { "step_id": 2, "step_title": "Tools & Techniques", "topics": ["Firewalls", "SIEM Tools", "Vulnerability Scanning"] },
+      { "step_id": 3, "step_title": "Incident Response", "topics": ["Monitoring", "Response Planning", "Reporting"] },
+      { "step_id": 4, "step_title": "Projects & Labs", "topics": ["Security Labs", "Capture The Flag (CTF)", "Simulations"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google Cybersecurity Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "CompTIA Security+ (Training)", "platform": "CompTIA", "level": "Intermediate" },
+        { "title": "Advanced Penetration Testing", "platform": "Coursera (U Maryland)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "TryHackMe (free rooms)",
+        "OverTheWire (Bandit)",
+        "Cisco NetAcad",
+        "OWASP Top 10"
+      ],
+      "projects": [
+        "Perform a vulnerability assessment on a lab machine and write a security report",
+        "Analyze network traffic and suspicious logs to simulate an incident response scenario",
+        "Set up a home SIEM environment using open-source tools (e.g., ELK stack)",
+        "Participate in a CTF competition and document your approach"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "Google Cybersecurity Professional Certificate",
+        "Cisco CyberOps Associate",
+        "Certified Ethical Hacker (CEH)"
+      ],
+      "tools": ["Wireshark", "Nmap", "Splunk", "Metasploit"]
+    }
+  },
+
+  "research_analyst": {
+    "title": "Research Analyst",
+    "description": "Collects and analyzes data to support business decisions and research projects",
+    "estimated_time": "6–9 Months",
+    "avg_salary": "$75k",
+    "learning_hours_per_day": "3 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Learn survey design best practices",
+      "Master pivot tables in Excel",
+      "Always validate your data sources",
+      "Practice data visualization for business stakeholders"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Data Collection", "topics": ["Surveys", "Interviews", "Secondary Research"] },
+      { "step_id": 2, "step_title": "Data Analysis", "topics": ["Excel", "SQL", "Statistical Analysis"] },
+      { "step_id": 3, "step_title": "Reporting & Visualization", "topics": ["Charts & Graphs", "Dashboards", "Presentation Skills"] },
+      { "step_id": 4, "step_title": "Projects & Case Studies", "topics": ["Business Reports", "Market Research Projects"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Business Research Methods", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Data Analysis and Presentation Skills", "platform": "PwC / Coursera", "level": "Intermediate" },
+        { "title": "Market Research Specialization", "platform": "Coursera (Queen Mary)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "SurveyMonkey templates",
+        "Google Forms",
+        "Statista (free reports)",
+        "Google Data Studio"
+      ],
+      "projects": [
+        "Conduct market research for a product idea and present insights in a report",
+        "Analyze survey responses and build a dashboard summarizing key findings",
+        "Perform a competitor analysis report for a local business",
+        "Create a comprehensive market research report for an Egyptian market segment"
+      ],
+      "certifications": [
+        "Google Data Analytics Professional Certificate",
+        "Microsoft Office Specialist: Excel Associate",
+        "Tableau Desktop Specialist",
+        "Qualtrics Research Core"
+      ],
+      "tools": ["Excel", "Google Forms", "Tableau", "Google Data Studio"]
+    }
+  },
+
+  "devops_engineer": {
+    "title": "DevOps Engineer",
+    "description": "Manages infrastructure, deployment pipelines, and automates processes",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$140k",
+    "learning_hours_per_day": "4 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Learn Linux system administration well",
+      "Master containerization (Docker) first",
+      "Automate everything you can",
+      "Learn Infrastructure as Code (IaC) with Terraform"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Linux & Scripting", "topics": ["Linux Basics", "Shell Scripting", "Python"] },
+      { "step_id": 2, "step_title": "CI/CD & Automation", "topics": ["Jenkins", "GitHub Actions", "Docker"] },
+      { "step_id": 3, "step_title": "Cloud & Infrastructure", "topics": ["AWS Basics", "Terraform", "Kubernetes"] },
+      { "step_id": 4, "step_title": "Monitoring & Security", "topics": ["Prometheus", "Logging", "Security Best Practices"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "DevOps on AWS Specialization", "platform": "Coursera (AWS)", "level": "Beginner" },
+        { "title": "Docker & Kubernetes: The Practical Guide", "platform": "Udemy", "level": "Intermediate" },
+        { "title": "Advanced Kubernetes & SRE", "platform": "Coursera (Google)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "DevOps Roadmap (roadmap.sh)",
+        "AWS Free Tier for practice",
+        "Kubernetes Official Docs",
+        "Terraform Official Docs"
+      ],
+      "projects": [
+        "Build a CI/CD pipeline that tests and deploys a sample application automatically",
+        "Containerize an application with Docker and deploy it using Kubernetes",
+        "Provision a cloud infrastructure on AWS using Terraform and monitor it with Prometheus",
+        "Set up a highly available web application architecture with load balancing and auto-scaling"
+      ],
+      "certifications": [
+        "AWS Certified DevOps Engineer – Professional",
+        "Docker Certified Associate",
+        "Certified Kubernetes Administrator (CKA)",
+        "HashiCorp Certified: Terraform Associate"
+      ],
+      "tools": ["Docker", "Jenkins", "Terraform", "Kubernetes"]
+    }
+  },
+
+  "graphic_designer": {
+    "title": "Graphic Designer",
+    "description": "Creates visual content for branding, marketing, and communications",
+    "estimated_time": "4–6 Months",
+    "avg_salary": "$65k",
+    "learning_hours_per_day": "3 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Build a unique design portfolio",
+      "Master Adobe Illustrator and Photoshop",
+      "Learn basic motion graphics for an edge",
+      "Understand color psychology and typography"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Design Fundamentals", "topics": ["Color Theory", "Typography", "Composition"] },
+      { "step_id": 2, "step_title": "Tools & Software", "topics": ["Adobe Photoshop", "Illustrator", "Figma"] },
+      { "step_id": 3, "step_title": "Projects & Portfolio", "topics": ["Branding Projects", "Social Media Graphics", "Portfolio Building"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Graphic Design Specialization", "platform": "Coursera (CalArts)", "level": "Beginner" },
+        { "title": "Adobe Photoshop CC Essentials Training", "platform": "Udemy", "level": "Intermediate" },
+        { "title": "Advanced Branding & Identity Design", "platform": "Coursera (University of Colorado)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Adobe Color CC",
+        "Canva Design School",
+        "Behance for inspiration",
+        "Unsplash for free images"
+      ],
+      "projects": [
+        "Create a complete brand identity package including logo, color palette, and social media templates",
+        "Design a promotional campaign poster set for a fictional event or business",
+        "Create a UI design system for a mobile app in Figma",
+        "Design a series of social media graphics for an Egyptian brand or startup"
+      ],
+      "certifications": [
+        "Adobe Certified Professional in Visual Design",
+        "Adobe Certified Professional in Graphic Design & Illustration",
+        "Google UX Design (optional extension)",
+        "Certified Graphic Designer (ACG)"
+      ],
+      "tools": ["Adobe Photoshop", "Adobe Illustrator", "Figma", "Canva"]
+    }
+  },
+
+  "deep_learning_engineer": {
+    "title": "Deep Learning Engineer",
+    "description": "Develops deep learning models for AI applications",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$150k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Focus heavily on CNNs, RNNs, and Transformers",
+      "Practice with PyTorch Lightning",
+      "Optimize models for inference and deployment",
+      "Learn to work with large-scale datasets"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Math & ML Basics", "topics": ["Linear Algebra", "Probability", "Machine Learning Fundamentals"] },
+      { "step_id": 2, "step_title": "Deep Learning Foundations", "topics": ["Neural Networks", "CNNs", "RNNs"] },
+      { "step_id": 3, "step_title": "Frameworks & Tools", "topics": ["TensorFlow", "PyTorch", "Keras"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Image Recognition", "NLP Projects", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Deep Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Intermediate" },
+        { "title": "CS231N: CNNs for Visual Recognition", "platform": "Stanford", "level": "Advanced" },
+        { "title": "Practical Deep Learning for Coders", "platform": "fast.ai", "level": "Beginner" }
+      ],
+      "free_resources": [
+        "PyTorch Tutorials",
+        "TensorFlow Core Docs",
+        "Papers with Code",
+        "Weights & Biases"
+      ],
+      "projects": [
+        "Build an image classification model using CNNs on a real-world dataset",
+        "Create a deep learning model for text classification or sequence prediction",
+        "Implement a GAN to generate synthetic images for a specific domain",
+        "Build a deep learning model for object detection and deploy it using ONNX"
+      ],
+      "certifications": [
+        "TensorFlow Developer Certificate",
+        "NVIDIA Deep Learning Institute Certificates",
+        "PyTorch Scholarship (Udacity)",
+        "AWS Certified Machine Learning – Specialty"
+      ],
+      "tools": ["PyTorch", "TensorFlow", "Weights & Biases", "Hugging Face"]
+    }
+  },
+
+  "business_analyst": {
+    "title": "Business Analyst",
+    "description": "Analyzes business processes and data to recommend improvements",
+    "estimated_time": "5–8 Months",
+    "avg_salary": "$85k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Learn process mapping techniques (BPMN)",
+      "Master requirements gathering",
+      "Translate business needs to technical specs",
+      "Build strong stakeholder communication skills"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Business Fundamentals", "topics": ["Business Processes", "SWOT Analysis", "Stakeholder Management"] },
+      { "step_id": 2, "step_title": "Data Analysis", "topics": ["Excel", "SQL", "Data Visualization"] },
+      { "step_id": 3, "step_title": "Requirements & Documentation", "topics": ["BRD", "Functional Specs", "Use Cases"] },
+      { "step_id": 4, "step_title": "Projects & Case Studies", "topics": ["Business Improvement Projects", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Business Analysis & Process Management", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Data-Driven Decision Making", "platform": "Coursera (PwC)", "level": "Intermediate" },
+        { "title": "Business Analyst Masterclass", "platform": "Udemy", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "IIBA (free articles)",
+        "Lucidchart templates",
+        "BPMN specifications",
+        "Business Process Management Resources"
+      ],
+      "projects": [
+        "Analyze and improve a business process for a fictional company with process maps and requirements",
+        "Create a dashboard and requirements document for a sales or operations use case",
+        "Develop a stakeholder communication plan for a digital transformation project",
+        "Conduct a feasibility study for a new business venture"
+      ],
+      "certifications": [
+        "ECBA (Entry Certificate in Business Analysis)",
+        "CBAP (Certified Business Analysis Professional)",
+        "Google Data Analytics Certificate",
+        "PBA (Professional in Business Analysis)"
+      ],
+      "tools": ["Microsoft Excel", "Lucidchart", "Jira", "Tableau"]
+    }
+  },
+
+  "backend_developer": {
+    "title": "Backend Developer",
+    "description": "Develops server-side logic and manages databases",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$120k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master API design (RESTful & GraphQL)",
+      "Understand database indexing and optimization",
+      "Learn about microservices architecture",
+      "Practice writing automated tests for backend code"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & OOP", "topics": ["Python/Java/C#", "Data Structures", "OOP Concepts"] },
+      { "step_id": 2, "step_title": "Databases", "topics": ["SQL", "NoSQL", "Database Design"] },
+      { "step_id": 3, "step_title": "Backend Frameworks", "topics": ["Node.js", "Express", "Django"] },
+      { "step_id": 4, "step_title": "APIs & Integration", "topics": ["REST API", "Authentication", "Testing"] },
+      { "step_id": 5, "step_title": "Projects & Practice", "topics": ["Mini Projects", "Portfolio", "Open Source Contribution"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Meta Back-End Developer Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "APIs and Microservices", "platform": "freeCodeCamp", "level": "Intermediate" },
+        { "title": "Spring Framework Masterclass", "platform": "Udemy", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Postman API Fundamentals",
+        "MongoDB University",
+        "MySQL Official Docs",
+        "Redis Official Docs"
+      ],
+      "projects": [
+        "Build a RESTful API with authentication, validation, and database integration",
+        "Create a backend for an e-commerce or booking system with role-based access",
+        "Design a microservice-based notification system using message queues",
+        "Build a real-time WebSocket server for a chat application"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate",
+        "AWS Certified Developer – Associate",
+        "Oracle Certified Foundations Associate",
+        "Microsoft Azure Developer Associate"
+      ],
+      "tools": ["Postman", "MongoDB Compass", "Docker", "Redis"]
+    }
+  },
+
+  "biostatistician": {
+    "title": "Biostatistician",
+    "description": "Applies statistics to analyze biological and medical data",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$105k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Master R and SAS",
+      "Understand clinical trial design",
+      "Learn to interpret p-values and confidence intervals correctly",
+      "Practice data visualization for medical research"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Statistics & Math", "topics": ["Probability", "Hypothesis Testing", "Linear Algebra"] },
+      { "step_id": 2, "step_title": "Programming", "topics": ["R", "Python", "Data Manipulation"] },
+      { "step_id": 3, "step_title": "Data Analysis", "topics": ["Clinical Data Analysis", "Bioinformatics Tools"] },
+      { "step_id": 4, "step_title": "Reporting & Visualization", "topics": ["Graphs", "Statistical Reports", "Dashboards"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Biostatistics in Public Health Specialization", "platform": "Coursera (Johns Hopkins)", "level": "Beginner" },
+        { "title": "Statistics for Genomic Data Science", "platform": "Coursera (Johns Hopkins)", "level": "Intermediate" },
+        { "title": "Advanced Statistics for Data Science", "platform": "Coursera (JHU)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "OpenIntro Statistics (free book)",
+        "R for Data Science (free book)",
+        "Kaggle Health Datasets",
+        "PubMed for research"
+      ],
+      "projects": [
+        "Analyze a clinical trial or health dataset and report statistical findings",
+        "Build a dashboard that visualizes trends in biological or public health data",
+        "Perform survival analysis on a medical dataset using R",
+        "Write a statistical report on a public health issue in Egypt"
+      ],
+      "certifications": [
+        "SAS Certified Specialist: Base Programming",
+        "IBM Data Science Professional Certificate",
+        "Google Data Analytics Professional Certificate",
+        "SAS Advanced Analytics"
+      ],
+      "tools": ["RStudio", "SPSS", "Python (Jupyter)", "SAS"]
+    }
+  },
+
+  "data_engineer": {
+    "title": "Data Engineer",
+    "description": "Designs and maintains data pipelines and infrastructure",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$135k",
+    "learning_hours_per_day": "4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Focus on ETL/ELT pipelines",
+      "Learn distributed computing (Spark)",
+      "Understand data warehousing concepts",
+      "Practice with cloud-based data solutions"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & SQL", "topics": ["Python/Java", "SQL Basics", "Data Structures"] },
+      { "step_id": 2, "step_title": "Data Warehousing", "topics": ["ETL Processes", "Data Lakes", "Big Data Concepts"] },
+      { "step_id": 3, "step_title": "Tools & Frameworks", "topics": ["Spark", "Hadoop", "Airflow"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Pipeline Projects", "Portfolio", "Open Source"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Data Engineering Professional Certificate", "platform": "IBM / Coursera", "level": "Beginner" },
+        { "title": "Data Engineering Zoomcamp", "platform": "DataTalksClub", "level": "Intermediate" },
+        { "title": "Google Cloud Data Engineering Track", "platform": "Coursera (Google)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Apache Airflow Tutorials",
+        "Spark Official Docs",
+        "DataTalksClub Zoomcamp",
+        "dbt (Data Build Tool) Tutorials"
+      ],
+      "projects": [
+        "Build an ETL pipeline that extracts, transforms, and loads data into a warehouse",
+        "Create a batch or streaming data pipeline using Airflow and a cloud database",
+        "Design a data lake architecture using AWS S3 and Glue",
+        "Build a real-time data pipeline using Kafka and Spark Streaming"
+      ],
+      "certifications": [
+        "Google Professional Data Engineer",
+        "AWS Certified Data Engineer – Associate",
+        "Databricks Certified Data Engineer",
+        "IBM Data Engineering Professional Certificate"
+      ],
+      "tools": ["Apache Airflow", "Apache Spark", "dbt", "Kafka"]
+    }
+  },
+
+  "content_strategist": {
+    "title": "Content Strategist",
+    "description": "Plans, creates, and manages content strategy for brands and products",
+    "estimated_time": "4–6 Months",
+    "avg_salary": "$70k",
+    "learning_hours_per_day": "2–3 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Develop a strong writing voice",
+      "Learn SEO content optimization",
+      "Build a professional blog/portfolio",
+      "Understand content distribution channels"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Content Fundamentals", "topics": ["Content Planning", "Audience Research", "Brand Voice"] },
+      { "step_id": 2, "step_title": "Content Creation", "topics": ["Writing Skills", "SEO Basics", "Visual Content"] },
+      { "step_id": 3, "step_title": "Distribution & Analysis", "topics": ["Social Media", "Analytics Tools", "Engagement Tracking"] },
+      { "step_id": 4, "step_title": "Projects & Portfolio", "topics": ["Case Studies", "Content Projects", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "The Strategy of Content Marketing", "platform": "Coursera (UCDavis)", "level": "Beginner" },
+        { "title": "Content Marketing Certification Course", "platform": "HubSpot Academy", "level": "Intermediate" },
+        { "title": "SEO Training Course", "platform": "Coursera (UC Davis)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "HubSpot Academy Blog",
+        "Yoast SEO Tutorials",
+        "Google Trends",
+        "Copyblogger (Articles)"
+      ],
+      "projects": [
+        "Create a 1-month content strategy for a startup including blog, email, and social media plan",
+        "Audit a brand's content and propose an SEO-focused content improvement strategy",
+        "Develop a content calendar and editorial guidelines for a specific niche",
+        "Write a white paper or case study for a local Egyptian brand"
+      ],
+      "certifications": [
+        "HubSpot Content Marketing Certification",
+        "Google Analytics Certification",
+        "Semrush SEO Certification",
+        "Content Marketing Institute (CMI) Certification"
+      ],
+      "tools": ["Google Analytics", "Notion", "Semrush", "Hootsuite"]
+    }
+  },
+
+  "automation_engineer": {
+    "title": "Automation Engineer",
+    "description": "Designs and implements automated systems to improve efficiency",
+    "estimated_time": "6–9 Months",
+    "avg_salary": "$115k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "Medium to High",
+    "job_tips": [
+      "Learn Selenium for web automation",
+      "Use Python for scripting",
+      "Implement CI/CD pipelines for testing",
+      "Understand robotic process automation (RPA)"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & Scripting", "topics": ["Python", "Shell Scripting", "Automation Tools"] },
+      { "step_id": 2, "step_title": "Automation Frameworks", "topics": ["Selenium", "Ansible", "CI/CD Pipelines"] },
+      { "step_id": 3, "step_title": "Testing & Monitoring", "topics": ["Automated Testing", "Monitoring Tools", "Reporting"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Automation Projects", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Selenium WebDriver with Python", "platform": "Udemy", "level": "Beginner" },
+        { "title": "Introduction to DevOps and Site Reliability Engineering", "platform": "Coursera (Google)", "level": "Intermediate" },
+        { "title": "Robotic Process Automation (RPA) Basics", "platform": "Coursera (UiPath)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Selenium Documentation",
+        "Ansible Docs",
+        "GitHub Actions Docs",
+        "Cypress Documentation"
+      ],
+      "projects": [
+        "Automate end-to-end testing for a sample web application using Selenium",
+        "Build a script or workflow to automate repetitive system or reporting tasks",
+        "Create an automated data backup and recovery system using Python",
+        "Develop an automated CI/CD pipeline with GitHub Actions"
+      ],
+      "certifications": [
+        "ISTQB Certified Tester Foundation Level",
+        "Red Hat Certified Specialist in Ansible Automation",
+        "UiPath Certified RPA Associate",
+        "AWS Certified DevOps Engineer"
+      ],
+      "tools": ["Selenium", "Ansible", "Jenkins", "GitHub Actions"]
+    }
+  },
+
+  "machine_learning_engineer": {
+    "title": "Machine Learning Engineer",
+    "description": "Builds and deploys machine learning models for real-world applications",
+    "estimated_time": "8–12 Months",
+    "avg_salary": "$145k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Master ML model deployment (MLOps)",
+      "Learn to containerize models with Docker",
+      "Monitor model performance in production",
+      "Understand feature engineering and model selection"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming & Math", "topics": ["Python", "Linear Algebra", "Probability", "Statistics"] },
+      { "step_id": 2, "step_title": "Machine Learning Basics", "topics": ["Supervised Learning", "Unsupervised Learning", "Scikit-learn"] },
+      { "step_id": 3, "step_title": "Advanced ML & Deep Learning", "topics": ["Neural Networks", "TensorFlow", "PyTorch"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["ML Projects", "Portfolio", "Kaggle Competitions"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Machine Learning Specialization", "platform": "Coursera (DeepLearning.AI)", "level": "Beginner" },
+        { "title": "Practical Machine Learning", "platform": "Coursera (JHU)", "level": "Intermediate" },
+        { "title": "MLOps with Kubernetes", "platform": "Coursera (Google)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "MLflow Docs",
+        "Scikit-learn Tutorials",
+        "Google ML Crash Course",
+        "Fast.ai (Machine Learning)"
+      ],
+      "projects": [
+        "Train and deploy a machine learning model as a web API for prediction",
+        "Build an end-to-end ML pipeline including preprocessing, training, and evaluation",
+        "Deploy a model to production using Docker and Kubernetes with monitoring",
+        "Build a scalable ML system for real-time predictions"
+      ],
+      "certifications": [
+        "TensorFlow Developer Certificate",
+        "Microsoft Certified: Azure AI Engineer Associate",
+        "AWS Certified Machine Learning – Specialty",
+        "Google Cloud Professional ML Engineer"
+      ],
+      "tools": ["scikit-learn", "MLflow", "Docker", "Kubernetes"]
+    }
+  },
+
+  "mobile_developer": {
+    "title": "Mobile Developer",
+    "description": "Develops applications for mobile devices (iOS, Android)",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$115k",
+    "learning_hours_per_day": "4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Learn Android (Kotlin) or iOS (Swift) deeply",
+      "Understand app lifecycle and UI/UX guidelines",
+      "Publish a demo app on the Play Store",
+      "Learn to handle different screen sizes and device configurations"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming Basics", "topics": ["Java/Kotlin for Android", "Swift for iOS", "OOP Concepts"] },
+      { "step_id": 2, "step_title": "Mobile Frameworks", "topics": ["React Native", "Flutter", "Cross-platform Development"] },
+      { "step_id": 3, "step_title": "UI/UX & Testing", "topics": ["Mobile UI Design", "Testing & Debugging", "App Deployment"] },
+      { "step_id": 4, "step_title": "Projects & Portfolio", "topics": ["Mobile App Projects", "Portfolio", "App Store/Play Store Deployment"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Android App Development with Kotlin", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Flutter & Dart - The Complete Guide", "platform": "Udemy", "level": "Intermediate" },
+        { "title": "Meta iOS Developer Professional Certificate", "platform": "Coursera", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "Google Android Developer Docs",
+        "Flutter Official Docs",
+        "Ray Wenderlich (free articles)",
+        "Apple Developer Documentation"
+      ],
+      "projects": [
+        "Build a mobile to-do or expense tracker app with local storage and clean UI",
+        "Develop a mobile app that consumes an API and includes authentication",
+        "Publish a simple productivity app to the Play Store or App Store",
+        "Build a cross-platform app with Flutter and deploy it to both platforms"
+      ],
+      "certifications": [
+        "Associate Android Developer Certification",
+        "Meta Android Developer Professional Certificate",
+        "Meta iOS Developer Professional Certificate",
+        "Flutter Certified Developer"
+      ],
+      "tools": ["Android Studio", "Firebase", "Xcode", "Flutter"]
+    }
+  },
+
+  "ux_researcher": {
+    "title": "UX Researcher",
+    "description": "Studies user behavior to improve products and experiences",
+    "estimated_time": "5–8 Months",
+    "avg_salary": "$90k",
+    "learning_hours_per_day": "3 hours",
+    "job_demand_in_egypt": "Medium",
+    "job_tips": [
+      "Learn various research methods (interviews, surveys, usability tests)",
+      "Triangulate data for better insights",
+      "Present findings effectively to stakeholders",
+      "Practice qualitative and quantitative research techniques"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Research Basics", "topics": ["User Interviews", "Surveys", "Observation Techniques"] },
+      { "step_id": 2, "step_title": "Analysis & Insights", "topics": ["Data Analysis", "Persona Creation", "User Journey Mapping"] },
+      { "step_id": 3, "step_title": "Testing & Feedback", "topics": ["Usability Testing", "A/B Testing", "Iterative Design"] },
+      { "step_id": 4, "step_title": "Projects & Portfolio", "topics": ["Case Studies", "UX Reports", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google UX Design Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "User Research – Methods and Best Practices", "platform": "Udemy", "level": "Intermediate" },
+        { "title": "Qualitative Research Methods", "platform": "Coursera (U Amsterdam)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "NN/g Articles",
+        "UXPA Resources",
+        "Maze (free templates)",
+        "Usability.gov"
+      ],
+      "projects": [
+        "Conduct user interviews for an app idea and present personas, journey maps, and insights",
+        "Run a usability test on an existing website and write a UX improvement report",
+        "Perform a competitive analysis and heuristic evaluation for a product",
+        "Conduct a remote user research study for a local Egyptian product"
+      ],
+      "certifications": [
+        "Google UX Design Professional Certificate",
+        "NN/g UX Certification",
+        "Certified Usability Analyst (CUA)",
+        "Qualtrics Research Core"
+      ],
+      "tools": ["Maze", "Figma", "Miro", "Google Forms"]
+    }
+  },
+
+  "cybersecurity_specialist": {
+    "title": "Cybersecurity Specialist",
+    "description": "Implements security solutions to protect systems and data",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$125k",
+    "learning_hours_per_day": "3–4 hours",
+    "job_demand_in_egypt": "High",
+    "job_tips": [
+      "Specialize in a domain (e.g., network, cloud, app security)",
+      "Get hands-on with Splunk and Wireshark",
+      "Stay updated with latest CVEs",
+      "Practice penetration testing and ethical hacking"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Security Fundamentals", "topics": ["Network Security", "Threat Analysis", "Encryption"] },
+      { "step_id": 2, "step_title": "Tools & Techniques", "topics": ["Firewalls", "IDS/IPS", "SIEM Tools"] },
+      { "step_id": 3, "step_title": "Incident Response & Compliance", "topics": ["Incident Handling", "Security Policies", "Regulations"] },
+      { "step_id": 4, "step_title": "Projects & Labs", "topics": ["CTF Challenges", "Security Simulations", "Portfolio"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "Google Cybersecurity Professional Certificate", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Introduction to Cyber Security", "platform": "Cisco Networking Academy", "level": "Intermediate" },
+        { "title": "Cybersecurity Risk Management", "platform": "Coursera (UVA)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "TryHackMe (premium-like free rooms)",
+        "PentesterLab (free exercises)",
+        "OWASP Top 10",
+        "SANS Reading Room"
+      ],
+      "projects": [
+        "Harden a small network environment and document the implemented security controls",
+        "Simulate an incident response workflow using logs, alerts, and remediation steps",
+        "Perform a penetration testing exercise on a vulnerable VM (e.g., Vulnhub)",
+        "Conduct a security audit for a small business environment"
+      ],
+      "certifications": [
+        "CompTIA Security+",
+        "Certified Ethical Hacker (CEH)",
+        "Cisco Certified CyberOps Associate",
+        "GIAC Security Essentials (GSEC)"
+      ],
+      "tools": ["Wireshark", "Splunk", "Metasploit", "Nmap"]
+    }
+  },
+
+  "cloud_engineer": {
+    "title": "Cloud Engineer",
+    "description": "Designs and manages cloud infrastructure and services",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$135k",
+    "learning_hours_per_day": "4 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master at least one cloud provider (prefer AWS)",
+      "Learn Infrastructure as Code (Terraform)",
+      "Understand cloud cost management",
+      "Practice designing highly available architectures"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Cloud Fundamentals", "topics": ["Cloud Concepts", "AWS/Azure/GCP Basics"] },
+      { "step_id": 2, "step_title": "Infrastructure & Services", "topics": ["Compute", "Storage", "Networking", "Databases"] },
+      { "step_id": 3, "step_title": "Automation & DevOps", "topics": ["IaC (Terraform)", "CI/CD", "Monitoring"] },
+      { "step_id": 4, "step_title": "Projects & Practice", "topics": ["Cloud Deployment Projects", "Portfolio", "Certifications"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "AWS Cloud Technical Essentials", "platform": "Coursera", "level": "Beginner" },
+        { "title": "Architecting with Google Compute Engine", "platform": "Coursera (Google)", "level": "Intermediate" },
+        { "title": "Microsoft Azure Fundamentals", "platform": "Coursera (Microsoft)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "AWS Free Tier (hands-on)",
+        "AWS Skill Builder (free courses)",
+        "Terraform Docs",
+        "Google Cloud Free Tier"
+      ],
+      "projects": [
+        "Deploy a full web application to the cloud with storage, database, and monitoring setup",
+        "Use Terraform to provision a small cloud infrastructure and document the architecture",
+        "Set up a highly available architecture using load balancers and auto-scaling on AWS",
+        "Design a cloud migration plan for a legacy on-premise application"
+      ],
+      "certifications": [
+        "AWS Certified Cloud Practitioner",
+        "AWS Certified Solutions Architect – Associate",
+        "Google Cloud Associate Cloud Engineer",
+        "Microsoft Azure Administrator Associate"
+      ],
+      "tools": ["AWS Management Console", "Terraform", "Google Cloud Shell", "Azure CLI"]
+    }
+  },
+
+  "software_developer": {
+    "title": "Software Developer",
+    "description": "Designs and develops software solutions for various applications",
+    "estimated_time": "6–12 Months",
+    "avg_salary": "$120k",
+    "learning_hours_per_day": "4–5 hours",
+    "job_demand_in_egypt": "Very High",
+    "job_tips": [
+      "Master Data Structures & Algorithms for interviews",
+      "Contribute to open-source projects",
+      "Learn software design patterns and best practices",
+      "Build a strong portfolio of projects"
+    ],
+    "roadmap": [
+      { "step_id": 1, "step_title": "Programming Basics", "topics": ["Python/Java/C#", "OOP Concepts", "Data Structures", "Algorithms"] },
+      { "step_id": 2, "step_title": "Version Control", "topics": ["Git Basics", "Branching", "Merging"] },
+      { "step_id": 3, "step_title": "Databases", "topics": ["SQL/NoSQL", "Database Design", "Query Optimization"] },
+      { "step_id": 4, "step_title": "Development Tools", "topics": ["IDEs", "Debugging", "Testing", "Build Tools"] },
+      { "step_id": 5, "step_title": "Projects & Practice", "topics": ["Mini Projects", "Portfolio", "Open Source Contributions"] }
+    ],
+    "resources": {
+      "courses": [
+        { "title": "CS50's Introduction to Computer Science", "platform": "Harvard / edX", "level": "Beginner" },
+        { "title": "Object-Oriented Programming in Java", "platform": "Coursera (Duke)", "level": "Intermediate" },
+        { "title": "Advanced Software Engineering", "platform": "Coursera (U Alberta)", "level": "Advanced" }
+      ],
+      "free_resources": [
+        "freeCodeCamp",
+        "The Odin Project",
+        "LeetCode for practice",
+        "Codewars for challenges"
+      ],
+      "projects": [
+        "Build a library or inventory management system with authentication and database support",
+        "Develop a desktop or web app that solves a real business problem and document the SDLC",
+        "Create a personal finance tracker using a GUI framework and SQLite",
+        "Build a full CRUD application with user authentication and authorization"
+      ],
+      "certifications": [
+        "Meta Back-End Developer Professional Certificate",
+        "Oracle Certified Foundations Associate",
+        "AWS Certified Developer – Associate",
+        "Microsoft Azure Developer Associate"
+      ],
+      "tools": ["GitHub", "Visual Studio Code", "IntelliJ IDEA", "Docker"]
+    }
+  }
+}

@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% block title %}Learning Resources — CareerIgnite{% endblock %}
+{% load static %}
+{% block content %}
+
+<section class="hero resources-hero" style="min-height:35vh;">
+    <div class="hero-content" style="grid-template-columns:1fr; text-align:center;">
+        <div>
+            <span class="roadmap-title-tag">📚 Learning Materials</span>
+            <h1>Resources for <span id="jobTitle" style="color:var(--mint);">Loading...</span></h1>
+            <p class="resources-subtitle">Recommended resources to support your Learning journey.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="padding-top:10px;">
+    <div class="resources-container">
+
+        <!-- TOP COURSES -->
+        <div class="resources-section">
+            <div class="section-label">
+                <span class="section-icon"><i class="fas fa-book-open"></i></span>
+                <div>
+                    <h2>Top Courses</h2>
+                    <p>Curated certificate courses to build your skills</p>
+                </div>
+            </div>
+            <div class="courses-grid" id="coursesContainer"></div>
+            <div class="free-resources-wrap">
+                <span class="free-label"><i class="fas fa-gift"></i> Free Alternatives</span>
+                <div class="free-tags" id="freeResourcesContainer"></div>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="resources-section">
+            <div class="section-label">
+                <span class="section-icon"><i class="fas fa-laptop-code"></i></span>
+                <div>
+                    <h2>Hands-on Projects</h2>
+                    <p>Build your portfolio with real-world projects</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="card-head">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Project List</h3>
+                </div>
+                <ul class="project-list" id="projectsList"></ul>
+            </div>
+        </div>
+
+        <!--  CERTIFICATIONS -->
+        <div class="resources-section">
+            <div class="section-label">
+                <span class="section-icon"><i class="fas fa-certificate"></i></span>
+                <div>
+                    <h2>Certifications</h2>
+                    <p>Earn recognized credentials</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="card-head">
+                    <i class="fas fa-award"></i>
+                    <h3>Recommended Certs</h3>
+                </div>
+                <div class="badge-wrap" id="certificationsContainer"></div>
+            </div>
+        </div>
+
+        <!--  PLATFORMS & TOOLS -->
+        <div class="resources-section">
+            <div class="section-label">
+                <span class="section-icon"><i class="fas fa-toolbox"></i></span>
+                <div>
+                    <h2>Platforms &amp; Tools</h2>
+                    <p>Essential tools for your workflow</p>
+                </div>
+            </div>
+            <div class="resource-card">
+                <div class="card-head">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Key Tools</h3>
+                </div>
+                <div class="pill-wrap" id="toolsContainer"></div>
+            </div>
+        </div>
+
+        <!--  JOB TIPS -->
+        <div class="resources-section">
+            <div class="section-label">
+                <span class="section-icon"><i class="fas fa-lightbulb"></i></span>
+                <div>
+                    <h2>Job Tips</h2>
+                    <p>Pro advice to accelerate your career</p>
+                </div>
+            </div>
+            <div class="tips-grid" id="jobTipsContainer"></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid rgb(168, 230, 207, 0, 08);">
+            <a href="{% url 'roadmap_page' %}?job={{ request.GET.job }}" class="btn btn-outline" style="display: inline-block; padding: 12px 32px;">← Back to Roadmap</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+(async function() {
+    const params = new URLSearchParams(window.location.search);
+    const jobKey = params.get('job');
+
+    const titleEl = document.getElementById('jobTitle');
+    const coursesContainer = document.getElementById('coursesContainer');
+    const freeResourcesContainer = document.getElementById('freeResourcesContainer');
+    const projectsList = document.getElementById('projectsList');
+    const certificationsContainer = document.getElementById('certificationsContainer');
+    const toolsContainer = document.getElementById('toolsContainer');
+    const jobTipsContainer = document.getElementById('jobTipsContainer');
+
+    if (!jobKey) { titleEl.textContent = 'No job selected'; return; }
+
+    let roadmaps;
+    try {
+        const response = await fetch("{% static 'roadmap.json' %}");
+        if (!response.ok) throw new Error('Failed to load roadmap.json');
+        roadmaps = await response.json();
+    } catch (error) {
+        console.error(error);
+        titleEl.textContent = 'Error loading data';
+        return;
+    }
+
+    const normalizedKey = jobKey.trim().toLowerCase();
+    
+    let job = null;
+    for (const [key, value] of Object.entries(roadmaps)) {
+        if (key.toLowerCase() === normalizedKey) { job = value; break; }
+    }
+
+    if (!job) { titleEl.textContent = 'Job not found'; return; }
+
+    titleEl.textContent = job.title;
+    const resources = job.resources || {};
+
+    // Courses
+    if (resources.courses && resources.courses.length) {
+        coursesContainer.innerHTML = resources.courses.map(c => `
+            <div class="course-card">
+                <h4>${c.title}</h4>
+                <div class="course-meta">
+                    <span class="course-platform"><i class="fas fa-university"></i> ${c.platform}</span>
+                    <span class="course-level ${c.level.toLowerCase()}">${c.level}</span>
+                </div>
+            </div>
+        `).join('');
+    } else {
+        coursesContainer.innerHTML = '<p class="empty-state">No courses listed.</p>';
+    }
+
+    // Free Resources
+    if (resources.free_resources && resources.free_resources.length) {
+        freeResourcesContainer.innerHTML = resources.free_resources.map(r => `<span class="free-tag">${r}</span>`).join('');
+    } else {
+        freeResourcesContainer.innerHTML = '<span class="empty-state">No free alternatives listed.</span>';
+    }
+
+    // Projects
+    if (resources.projects && resources.projects.length) {
+        projectsList.innerHTML = resources.projects.map((p, idx) => `
+            <li class="project-item">
+                <span class="project-num">${String(idx + 1).padStart(2, '0')}</span>
+                <span class="project-text">${p}</span>
+            </li>
+        `).join('');
+    } else {
+        projectsList.innerHTML = '<li class="empty-state">No projects listed.</li>';
+    }
+
+    // Certifications
+    if (resources.certifications && resources.certifications.length) {
+        certificationsContainer.innerHTML = resources.certifications.map(c => `<span class="cert-badge">${c}</span>`).join('');
+    } else {
+        certificationsContainer.innerHTML = '<span class="empty-state">No certifications listed.</span>';
+    }
+
+    // Tools
+    if (resources.tools && resources.tools.length) {
+        toolsContainer.innerHTML = resources.tools.map(t => `<span class="tool-pill">${t}</span>`).join('');
+    } else {
+        toolsContainer.innerHTML = '<span class="empty-state">No tools listed.</span>';
+    }
+
+    // Job Tips
+    if (job.job_tips && job.job_tips.length) {
+        jobTipsContainer.innerHTML = job.job_tips.map(t => `
+            <div class="tip-card">
+                <i class="fas fa-star"></i>
+                <p>${t}</p>
+            </div>
+        `).join('');
+    } else {
+        jobTipsContainer.innerHTML = '<p class="empty-state">No tips available.</p>';
+    }
+})();
+</script>
+{% endblock %}

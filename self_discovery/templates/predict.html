@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% block title %}Your Result — CareerIgnite{% endblock %}
+
+{% block content %}
+<section class="hero" style="min-height:50vh;">
+    <div class="hero-content" style="grid-template-columns:1fr;text-align:center;">
+        <div>
+            {% if result %}
+                <span class="roadmap-title-tag">🎯 AI Career Match</span>
+                <h1>Your Recommended <span>Career</span></h1>
+                <p style="max-width:700px;margin:10px auto 0;">
+                    Based on your profile, our AI recommends the path of a
+                    <strong style="color:var(--mint);">{{ result }}</strong>.
+                    Here's where your skills, interests and education align best — and the next step on your journey.
+                </p>
+            {% else %}
+                <span class="roadmap-title-tag">No result yet</span>
+                <h1>Start Your <span>Assessment</span></h1>
+                <p style="max-width:700px;margin:10px auto 0;">
+                    We need your profile first. Take the short assessment and let CareerIgnite recommend the best path for you.
+                </p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="form-container" style="text-align:center;">
+        {% if result %}
+            <div class="card-icon" style="margin:0 auto 25px;width:80px;height:80px;font-size:2.4rem;">
+                <i class="fas fa-bullseye"></i>
+            </div>
+            <h2 style="font-size:2rem;margin-bottom:8px;">{{ result }}</h2>
+            <p style="color:var(--gray-mid);margin-bottom:30px;">
+                This career appears to be the strongest match for your unique combination of skills, interests, and educational background.
+                View your personalized roadmap to see exactly how to get there.
+            </p>
+
+            <div class="hero-buttons" style="justify-content:center;">
+                <a href="{% url 'roadmap_page' %}?job={{ job_key }}" class="btn btn-primary">View My Roadmap →</a>
+                <a href="{% url 'job_recommendation' %}" class="btn btn-outline">Retake Assessment</a>
+            </div>
+        {% else %}
+            <div class="card-icon" style="margin:0 auto 25px;width:80px;height:80px;font-size:2.4rem;">
+                <i class="fas fa-user-edit"></i>
+            </div>
+            <h2 style="font-size:1.6rem;margin-bottom:10px;">We need your profile first</h2>
+            <p style="color:var(--gray-mid);margin-bottom:30px;">
+                Go to the assessment, fill in your information, and let our AI recommend the best path for you.
+            </p>
+            <a href="{% url 'job_recommendation' %}" class="btn btn-primary">Go to Assessment</a>
+        {% endif %}
+    </div>
+</section>
+
+{% if result %}
+<section class="section" style="background:var(--navy-mid);">
+    <h2 class="section-title">What's <span>Next</span>?</h2>
+    <p class="section-subtitle">Here's how to turn this recommendation into a real career.</p>
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-map-marked-alt"></i></div>
+            <h3>1. Open Your Roadmap</h3>
+            <p>See the step-by-step learning plan curated specifically for the {{ result }} track.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3>2. Start Learning</h3>
+            <p>Follow the recommended skills, courses and milestones at your own pace.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-rocket"></i></div>
+            <h3>3. Build & Apply</h3>
+            <p>Build real projects, polish your CV and apply to your dream roles with confidence.</p>
+        </div>
+    </div>
+</section>
+{% endif %}
+{% endblock %}

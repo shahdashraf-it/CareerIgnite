@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% block title %}Career Assessment — CareerIgnite{% endblock %}
+
+{% block content %}
+<section class="hero" style="min-height:40vh;">
+    <div class="hero-content" style="grid-template-columns:1fr;text-align:center;">
+        <div>
+            <h1>Your Career <span>Assessment</span></h1>
+            <p style="max-width:650px;margin:0 auto;">Answer a few questions about yourself. Our AI will analyze your profile and recommend the perfect career track for you.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="form-container">
+        <!-- Progress -->
+        <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:33%;"></div></div>
+        <p style="text-align:right;color:var(--mint);margin-bottom:25px;font-weight:600;" id="stepIndicator">Step 1 of 3</p>
+
+        <!-- Form (POSTs to Django predict_job view) -->
+        <form method="POST" action="{% url 'predict_job' %}" id="assessmentForm">
+            {% csrf_token %}
+            <!-- Hidden combined text used by the ML model -->
+            <input type="hidden" name="text" id="combinedText">
+
+            <!-- Step 1: Education -->
+            <div class="form-step" id="step1">
+                <h2>Education Background</h2>
+                <p class="step-label">Tell us about your studies</p>
+
+                <div class="form-group">
+                    <label>Education Level</label>
+                    <select name="education_level" id="educationLevel" class="form-control" required>
+                        <option value="">— Select —</option>
+                        <option>High School</option>
+                        <option>Diploma</option>
+                        <option>Bachelor's Degree</option>
+                        <option>Master's Degree</option>
+                        <option>PhD</option>
+                        <option>Self-Taught</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Field of Study</label>
+                    <input type="text" name="field_of_study" id="fieldOfStudy" class="form-control" placeholder="e.g. Computer Science, Business, Design...">
+                    <small id="fieldError" style="color:red;"></small> 
+                </div>
+
+                <div class="form-group">
+                    <label>Graduation Year (or expected)</label>
+                    <input type="number" name="grad_year" class="form-control" placeholder="e.g. 2025" min="1980" max="2035">
+                </div>
+
+                <div class="form-buttons">
+                    <span></span>
+                    <button type="button" class="btn btn-primary" onclick="nextStep(2)">Next Step →</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Skills -->
+            <div class="form-step" id="step2" style="display:none;">
+                <h2>Your Skills</h2>
+                <p class="step-label">Pick everything you're good at — be honest!</p>
+
+                <div class="form-group">
+                    <label>Select Your Skills</label>
+                    <div class="skill-tags" id="skillTags">
+                        <span class="skill-tag" data-skill="Python">Python</span>
+                        <span class="skill-tag" data-skill="JavaScript">JavaScript</span>
+                        <span class="skill-tag" data-skill="HTML/CSS">HTML/CSS</span>
+                        <span class="skill-tag" data-skill="SQL">SQL</span>
+                        <span class="skill-tag" data-skill="Data Analysis">Data Analysis</span>
+                        <span class="skill-tag" data-skill="Machine Learning">Machine Learning</span>
+                        <span class="skill-tag" data-skill="UI/UX Design">UI/UX Design</span>
+                        <span class="skill-tag" data-skill="Graphic Design">Graphic Design</span>
+                        <span class="skill-tag" data-skill="Digital Marketing">Digital Marketing</span>
+                        <span class="skill-tag" data-skill="Content Writing">Content Writing</span>
+                        <span class="skill-tag" data-skill="Public Speaking">Public Speaking</span>
+                        <span class="skill-tag" data-skill="Project Management">Project Management</span>
+                        <span class="skill-tag" data-skill="Photography">Photography</span>
+                        <span class="skill-tag" data-skill="Video Editing">Video Editing</span>
+                        <span class="skill-tag" data-skill="Excel">Excel</span>
+                        <span class="skill-tag" data-skill="Communication">Communication</span>
+                    </div>
+                    <input type="hidden" name="skills" id="skillsInput">
+                </div>
+
+                <div class="form-group">
+                    <label>Years of Experience (overall)</label>
+                    <select name="experience" class="form-control">
+                        <option>0 — I'm just starting</option>
+                        <option>1-2 years</option>
+                        <option>3-5 years</option>
+                        <option>5+ years</option>
+                    </select>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="prevStep(1)">← Back</button>
+                    <button type="button" class="btn btn-primary" onclick="nextStep(3)">Next Step →</button>
+                </div>
+            </div>
+
+            <!-- Step 3: Interests -->
+            <div class="form-step" id="step3" style="display:none;">
+                <h2>Your Interests</h2>
+                <p class="step-label">Which fields excite you the most?</p>
+
+                <div class="form-group">
+                    <label>Pick Your Areas of Interest</label>
+                    <div class="skill-tags" id="interestTags">
+                        <span class="skill-tag" data-skill="Software Development">💻 Software Development</span>
+                        <span class="skill-tag" data-skill="Data Science">📊 Data Science</span>
+                        <span class="skill-tag" data-skill="AI / Machine Learning">🤖 AI / Machine Learning</span>
+                        <span class="skill-tag" data-skill="Cybersecurity">🔒 Cybersecurity</span>
+                        <span class="skill-tag" data-skill="UI/UX Design">🎨 UI/UX Design</span>
+                        <span class="skill-tag" data-skill="Marketing">📈 Marketing</span>
+                        <span class="skill-tag" data-skill="Business / Entrepreneurship">💼 Business / Entrepreneurship</span>
+                        <span class="skill-tag" data-skill="Content Creation">🎬 Content Creation</span>
+                        <span class="skill-tag" data-skill="Game Development">🎮 Game Development</span>
+                        <span class="skill-tag" data-skill="Mobile Development">📱 Mobile Development</span>
+                        <span class="skill-tag" data-skill="Cloud / DevOps">☁️ Cloud / DevOps</span>
+                        <span class="skill-tag" data-skill="Education">📚 Education</span>
+                    </div>
+                    <input type="hidden" name="interests" id="interestsInput">
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn btn-outline" onclick="prevStep(2)">← Back</button>
+                    <button type="submit" class="btn btn-primary">🚀 Analyze My Profile</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+
+let currentStep = 1;
+const totalSteps = 3;
+
+function showStep(n){
+    for(let i=1;i<=totalSteps;i++){
+        document.getElementById('step'+i).style.display = (i===n) ? 'block' : 'none';
+    }
+    document.getElementById('progressFill').style.width = (n / totalSteps * 100) + '%';
+    document.getElementById('stepIndicator').textContent = `Step ${n} of ${totalSteps}`;
+    currentStep = n;
+}
+function nextStep(n){ showStep(n); }
+function prevStep(n){ showStep(n); }
+
+// English characters validation for education field only
+function isEnglish(text){
+    return /^[A-Za-z0-9 ,.-]*$/.test(text);
+}
+
+document.getElementById("fieldOfStudy").addEventListener("input", function(){
+    document.getElementById("fieldError").innerText =
+        isEnglish(this.value) ? "" : "❌Please use English characters only";
+});
+
+// Skill / Interest tag selection
+function setupTagGroup(containerId, hiddenInputId){
+    const container = document.getElementById(containerId);
+    const hidden = document.getElementById(hiddenInputId);
+
+    container.addEventListener('click', e=>{
+        if(e.target.classList.contains('skill-tag')){
+            e.target.classList.toggle('active');
+            const selected = [...container.querySelectorAll('.skill-tag.active')]
+                .map(t=>t.dataset.skill);
+            hidden.value = selected.join(',');
+        }
+    });
+}
+setupTagGroup('skillTags','skillsInput');
+setupTagGroup('interestTags','interestsInput');
+
+// Combine all answers into a single text payload that ML model expects
+document.getElementById('assessmentForm').addEventListener('submit', function () {
+
+    const eduLevel   = (document.getElementById('educationLevel').value || '').trim();
+    const field      = (document.getElementById('fieldOfStudy').value || '').trim();
+    const skills     = (document.getElementById('skillsInput').value || '').replace(/,/g, ' ');
+    const interests  = (document.getElementById('interestsInput').value || '').replace(/,/g, ' ');
+
+    const combined = [eduLevel, field, skills, interests]
+        .filter(Boolean)
+        .join(' ');
+
+    document.getElementById('combinedText').value = combined;
+
+    // Track usage for the local admin dashboard
+    try {
+        const count = parseInt(localStorage.getItem('recommendationCount') || '0', 10);
+        localStorage.setItem('recommendationCount', String(count + 1));
+    } catch(e) {}
+});
+
+</script>
+{% endblock %}

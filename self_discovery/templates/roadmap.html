@@ -1,0 +1,133 @@
+{% extends 'base.html' %}
+{% block title %}Your Roadmap — CareerIgnite{% endblock %}
+{% load static %}
+{% block content %}
+
+<section class="hero roadmap-hero-section">
+    <div class="hero-content roadmap-hero-grid">
+        <div>
+            <span class="roadmap-title-tag">🎯 Recommended Track</span>
+            <h1>Your Personalized <span>Roadmap</span></h1>
+            <p class="roadmap-hero-text">
+                Based on your profile, our AI recommends the path of a
+                <strong class="roadmap-text-mint" id="trackName">Loading...</strong>.
+                Here's your step-by-step journey from where you are now to where you want to be.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+
+    <!-- Match Summary -->
+    <div class="roadmap-stats-grid">
+        <div class="card"><div class="card-icon"><i class="fas fa-briefcase"></i></div><h3 id="avgSalary">-</h3><p>Estimated Annual Salary</p></div>
+        <div class="card"><div class="card-icon"><i class="fas fa-clock"></i></div><h3 id="duration">-</h3><p>Estimated Duration</p> </div>
+        <div class="card"><div class="card-icon"><i class="fas fa-user-clock"></i></div> <h3 id="dailyHours">-</h3><p>Recommended Daily Hours</p> </div>
+        <div class="card"><div class="card-icon"><i class="fas fa-chart-line"></i></div> <h3 id="jobDemand">-</h3> <p>Market Demand in Egypt</p></div> 
+    </div>
+
+    <!-- Track Description -->
+    <p id="jobDescription" class="roadmap-desc-p"></p>
+
+    <!-- Timeline -->
+    <div class="roadmap-timeline" id="roadmapTimeline"></div>
+
+    <!-- Resources Button -->
+    <div style="text-align:center; margin: 30px 0 20px;">
+        <a href="{% url 'resources_page' %}?job={{ request.GET.job }}" class="btn btn-primary" style="padding: 14px 40px;">
+            📚 View Recommended Resources
+        </a>
+    </div>
+<!-- Footer Section -->
+<section class="section" style="text-align:center;">
+    <h2 class="section-title">Want to Try a <span>Different Track</span>?</h2>
+    <p class="section-subtitle">You can always retake the assessment to explore other career options.</p>
+    <a href="{% url 'job_recommendation' %}" class="btn btn-primary">Retake Assessment</a>
+    <a href="{% url 'contact_page' %}" class="btn btn-outline" style="margin-left:10px;">Get Expert Help</a>
+    <a href="{% url 'chatbot_page' %}" class="btn btn-primary" style="margin-left:10px;">    Career Assistant
+</a>
+</section>
+
+{% endblock %}
+
+{% block scripts %}
+
+<script>
+async function loadRoadmaps(){
+    try{
+        const response = await fetch("{% static 'roadmap.json' %}");
+        if(!response.ok) throw new Error("Failed to load roadmap.json");
+        return await response.json();
+    }
+    catch(error){
+        console.error(error);
+        return null;
+    }
+}
+
+async function renderRoadmap(jobKey){
+
+    const trackEl = document.getElementById("trackName");
+    const descEl = document.getElementById("jobDescription");
+    const durationEl = document.getElementById("duration");
+    const salaryEl = document.getElementById("avgSalary");
+    const dailyHoursEl = document.getElementById("dailyHours");
+    const jobDemandEl = document.getElementById("jobDemand");
+    const timeline = document.getElementById("roadmapTimeline");
+
+    const roadmaps = await loadRoadmaps();
+    const normalizedKey = jobKey ? jobKey.trim().toLowerCase() : null;
+    const job = roadmaps && roadmaps[normalizedKey] ? roadmaps[normalizedKey] : null;
+    
+    let title, description, duration, salary, steps, learningHours, demand;
+
+    if(job){
+        title = job.title;
+        description = job.description;
+        duration = job.estimated_time;
+        salary = job.avg_salary;
+        steps = job.roadmap;
+        learningHours = job.learning_hours_per_day || "Not specified";
+        demand = job.job_demand_in_egypt || "Not specified";
+    } else {
+        title = "Roadmap Unavailable";
+        description = "Unable to load roadmap data.";
+        duration = "-";
+        salary = "-";
+        steps = [];
+        learningHours = "-";
+        demand = "-";
+    }
+
+    trackEl.textContent = title;
+    descEl.textContent = description;
+    durationEl.textContent = duration;
+    salaryEl.textContent = salary;
+    dailyHoursEl.textContent = learningHours;
+    jobDemandEl.textContent = demand;
+
+    timeline.innerHTML = "";
+    steps.forEach((step, index) => {
+        const wrap = document.createElement("div");
+        wrap.className = "roadmap-step";
+        const pills = (step.topics || [])
+            .map(topic => `<span class="skill-pill">${topic}</span>`)
+            .join("");
+        wrap.innerHTML = `
+            <span class="step-num">Step ${index+1}</span>
+            <h3>${step.step_title}</h3>
+            <p>Master the topics below to complete this milestone.</p>
+            ${pills}
+        `;
+        timeline.appendChild(wrap);
+    });
+
+}
+
+const params = new URLSearchParams(window.location.search);
+renderRoadmap(params.get("job"));
+
+</script>
+
+{% endblock %}

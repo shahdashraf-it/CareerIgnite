@@ -1,0 +1,223 @@
+{
+  "cybersecurity_analyst": {
+    "keywords": [
+      "cybersecurity",
+      "cyber security",
+      "cyber",
+      "cyper",
+      "security",
+      "cybr",
+      "امن سيبراني",
+      "سايبر",
+      "سيبر",
+      "cybersecurity analyst",
+      "soc",
+      "soc analyst"
+    ],
+    "title": "Cybersecurity Analyst",
+    "title_ar": "محلل أمن سيبراني",
+    "response": "🔐 Cybersecurity Analysts protect systems, networks, and data from cyber attacks and security threats.",
+    "response_ar": "🔐 محلل الأمن السيبراني بيحمي الأنظمة والشبكات والبيانات من الهجمات الإلكترونية والاختراقات."
+  },
+
+  "frontend_developer": {
+    "keywords": [
+      "frontend",
+      "front-end",
+      "front end",
+      "html",
+      "css",
+      "javascript",
+      "react",
+      "واجهة",
+      "فرونت",
+      "فرونت اند"
+    ],
+    "title": "Frontend Developer",
+    "title_ar": "مطور واجهات أمامية",
+    "response": "🎨 Frontend Developers build the visual and interactive parts of websites using HTML, CSS, JavaScript, and React.",
+    "response_ar": "🎨 مطور الواجهات الأمامية بيصمم ويبني شكل الموقع والتفاعل باستخدام HTML و CSS و JavaScript و React."
+  },
+
+  "backend_developer": {
+    "keywords": [
+      "backend",
+      "back-end",
+      "back end",
+      "server",
+      "api",
+      "django",
+      "nodejs",
+      "database",
+      "باك اند"
+    ],
+    "title": "Backend Developer",
+    "title_ar": "مطور Back-End",
+    "response": "🖥️ Backend Developers build APIs, databases, and server-side logic.",
+    "response_ar": "🖥️ مطور الـ Backend مسؤول عن السيرفرات وقواعد البيانات والـ APIs الخاصة بالموقع أو التطبيق."
+  },
+
+  "full_stack_developer": {
+    "keywords": [
+      "full stack",
+      "fullstack",
+      "full-stack",
+      "فل ستاك"
+    ],
+    "title": "Full Stack Developer",
+    "title_ar": "مطور Full Stack",
+    "response": "🌐 Full Stack Developers work on both frontend and backend systems.",
+    "response_ar": "🌐 مطور الـ Full Stack بيشتغل على الـ Frontend والـ Backend معًا."
+  },
+
+  "ai_specialist": {
+    "keywords": [
+      "ai",
+      "artificial intelligence",
+      "machine learning",
+      "deep learning",
+      "ذكاء اصطناعي",
+      "ذكاء"
+    ],
+    "title": "AI Specialist",
+    "title_ar": "متخصص ذكاء اصطناعي",
+    "response": "🤖 AI Specialists build intelligent systems using machine learning and deep learning.",
+    "response_ar": "🤖 متخصص الذكاء الاصطناعي بيبني أنظمة ذكية باستخدام Machine Learning و Deep Learning."
+  },
+
+  "data_analyst": {
+    "keywords": [
+      "data analyst",
+      "analytics",
+      "analysis",
+      "تحليل بيانات",
+      "داتا انالست"
+    ],
+    "title": "Data Analyst",
+    "title_ar": "محلل بيانات",
+    "response": "📊 Data Analysts analyze and visualize data to help companies make decisions.",
+    "response_ar": "📊 محلل البيانات بيجمع وينظف ويحلل البيانات لمساعدة الشركات على اتخاذ قرارات أفضل."
+  },
+
+  "data_scientist": {
+    "keywords": [
+      "data science",
+      "datascience",
+      "data scientist",
+      "علوم البيانات"
+    ],
+    "title": "Data Scientist",
+    "title_ar": "عالم بيانات",
+    "response": "📈 Data Scientists use statistics and AI to extract insights from data.",
+    "response_ar": "📈 عالم البيانات بيستخدم الإحصاء والذكاء الاصطناعي لاستخراج معلومات مهمة من البيانات."
+  },
+
+  "machine_learning_engineer": {
+    "keywords": [
+      "machine learning",
+      "ml",
+      "ml engineer",
+      "تعلم الالة"
+    ],
+    "title": "Machine Learning Engineer",
+    "title_ar": "مهندس تعلم آلة",
+    "response": "📚 Machine Learning Engineers build and deploy ML models.",
+    "response_ar": "📚 مهندس تعلم الآلة بيبني ويدرّب موديلات الذكاء الاصطناعي."
+  },
+
+  "cloud_engineer": {
+    "keywords": [
+      "cloud",
+      "aws",
+      "azure",
+      "gcp",
+      "كلاود"
+    ],
+    "title": "Cloud Engineer",
+    "title_ar": "مهندس حوسبة سحابية",
+    "response": "☁️ Cloud Engineers manage cloud infrastructure and services.",
+    "response_ar": "☁️ مهندس الكلاود مسؤول عن إدارة الخدمات والبنية التحتية السحابية."
+  },
+
+  "devops_engineer": {
+    "keywords": [
+      "devops",
+      "docker",
+      "kubernetes",
+      "ci/cd",
+      "ديف اوبس"
+    ],
+    "title": "DevOps Engineer",
+    "title_ar": "مهندس DevOps",
+    "response": "⚡ DevOps Engineers automate deployments and infrastructure.",
+    "response_ar": "⚡ مهندس DevOps بيقوم بأتمتة النشر وإدارة السيرفرات والبنية التحتية."
+  },
+
+  "mobile_developer": {
+    "keywords": [
+      "mobile",
+      "android",
+      "ios",
+      "flutter",
+      "react native",
+      "موبايل"
+    ],
+    "title": "Mobile Developer",
+    "title_ar": "مطور تطبيقات موبايل",
+    "response": "📱 Mobile Developers create apps for Android and iOS.",
+    "response_ar": "📱 مطور تطبيقات الموبايل بيصمم تطبيقات للأندرويد و iOS."
+  },
+
+  "ux_designer": {
+    "keywords": [
+      "ux",
+      "ui ux",
+      "designer",
+      "تصميم",
+      "يو اكس"
+    ],
+    "title": "UX Designer",
+    "title_ar": "مصمم تجربة مستخدم",
+    "response": "🎯 UX Designers improve user experiences and usability.",
+    "response_ar": "🎯 مصمم الـ UX بيحسن تجربة المستخدم وسهولة استخدام التطبيقات."
+  },
+
+  "graphic_designer": {
+    "keywords": [
+      "graphic",
+      "photoshop",
+      "illustrator",
+      "جرافيك"
+    ],
+    "title": "Graphic Designer",
+    "title_ar": "مصمم جرافيك",
+    "response": "🎨 Graphic Designers create visual content and branding.",
+    "response_ar": "🎨 مصمم الجرافيك بيصمم الشعارات والإعلانات والمحتوى البصري."
+  },
+
+  "project_manager": {
+    "keywords": [
+      "project manager",
+      "pm",
+      "management",
+      "مدير مشروع"
+    ],
+    "title": "Project Manager",
+    "title_ar": "مدير مشروع",
+    "response": "📋 Project Managers organize tasks, teams, and timelines.",
+    "response_ar": "📋 مدير المشروع بينظم الفريق والمهام والمواعيد لضمان نجاح المشروع."
+  },
+
+  "digital_marketer": {
+    "keywords": [
+      "marketing",
+      "seo",
+      "digital marketing",
+      "تسويق"
+    ],
+    "title": "Digital Marketer",
+    "title_ar": "مسوق رقمي",
+    "response": "📢 Digital Marketers promote brands using online marketing strategies.",
+    "response_ar": "📢 المسوق الرقمي بيستخدم الإعلانات والسوشيال ميديا و SEO للتسويق للمنتجات."
+  }
+}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block title %}About — CareerIgnite{% endblock %}
+
+{% block content %}
+<section class="hero" style="min-height:60vh;">
+    <div class="hero-content" style="grid-template-columns:1fr;text-align:center;">
+        <div>
+            <h1>About <span>CareerIgnite</span></h1>
+            <p style="max-width:700px;margin:0 auto;">Your intelligent companion on the journey to a meaningful career. We believe every person deserves clarity about their future — and the tools to build it.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+        <div>
+            <h2 class="section-title" style="text-align:left;">Our <span>Story</span></h2>
+            <p style="color:var(--gray-light);margin-bottom:18px;">CareerIgnite was born from a simple but powerful question: <em>"How do people choose the right career when there are so many options?"</em></p>
+            <p style="color:var(--gray-mid);margin-bottom:18px;">Too many students and young professionals feel lost, switching majors, jobs, or industries because they never had a clear roadmap. We built CareerIgnite to change that — combining AI intelligence with practical career planning to guide you with confidence.</p>
+            <p style="color:var(--gray-mid);">Today, thousands of users trust us to point them in the right direction. Tomorrow, we want to be the first stop for every person making a career decision worldwide.</p>
+        </div>
+        <div style="background:var(--navy-mid);padding:40px;border-radius:14px;border:1px solid rgba(168,230,207,0.15);">
+            <i class="fas fa-quote-left" style="color:var(--mint);font-size:2rem;margin-bottom:15px;"></i>
+            <p style="font-size:1.1rem;line-height:1.7;color:var(--white);font-style:italic;">"We don't believe in generic career advice. We believe in YOUR career — built around YOUR skills, YOUR passion, and YOUR pace."</p>
+            <p style="margin-top:20px;color:var(--mint);font-weight:600;">— The CareerIgnite Team</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background:var(--navy-mid);">
+    <h2 class="section-title">Our <span>Pillars</span></h2>
+    <p class="section-subtitle">Three values guide every decision we make.</p>
+    <div class="cards-grid">
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>Our Mission</h3>
+            <p>Empower every individual to discover and pursue the career path that aligns with who they truly are — not who others expect them to be.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>A world where no one wastes years in the wrong career. Where every student, graduate, and professional moves forward with clarity and purpose.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon"><i class="fas fa-heart"></i></div>
+            <h3>Our Values</h3>
+            <p>Honesty in our recommendations, accuracy in our AI, empathy for our users, and a relentless drive to make career planning accessible to all.</p>
+        </div>
+    </div>
+</section>
+
+<section class="stats">
+    <div class="stat-item"><span class="stat-number">10K+</span><span class="stat-label">Users Guided</span></div>
+    <div class="stat-item"><span class="stat-number">95%</span><span class="stat-label">Match Accuracy</span></div>
+    <div class="stat-item"><span class="stat-number">50+</span><span class="stat-label">Career Tracks</span></div>
+    <div class="stat-item"><span class="stat-number">120+</span><span class="stat-label">Countries Reached</span></div>
+</section>
+
+<section class="section" style="text-align:center;">
+    <h2 class="section-title">Ready to Find Your <span>Track</span>?</h2>
+    <p class="section-subtitle">Take the first step today — your future self will thank you.</p>
+    <a href="{% url 'job_recommendation' %}" class="btn btn-primary">Start the Assessment</a>
+</section>
+{% endblock %}
